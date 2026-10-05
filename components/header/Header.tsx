@@ -1,14 +1,17 @@
-"use client";
-
-import { useBreakpointValue } from "@chakra-ui/react";
-
-import Desktopheader from "./Desktop/DesktopHeader";
+import { Box } from "@chakra-ui/react";
+import DesktopHeader from "./Desktop/DesktopHeader";
 import MobileHeader from "./Mobile/MobileHeader";
 
 export default function Header() {
-  const isMobile = useBreakpointValue({
-    base: true,
-    lg: false,
-  });
-  return isMobile ? <MobileHeader /> : <Desktopheader />;
+  return (
+    <>
+      <Box display={{ base: "none", lg: "block" }}>
+        <DesktopHeader />
+      </Box>
+
+      <Box display={{ base: "block", lg: "none" }}>
+        <MobileHeader />
+      </Box>
+    </>
+  );
 }
