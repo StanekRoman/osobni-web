@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans, Roboto_Serif } from "next/font/google";
 
 import { Provider } from "@/components/ui/provider";
+import Header from "@/components/header/Header";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
@@ -38,7 +39,10 @@ export default function RootLayout({
       className={`${inter.variable} ${plusJakartaSans.variable} ${robotoSerif.variable}`}
     >
       <body>
-        <Provider>{children}</Provider>
+        <Provider>
+          <Header />
+          {children}
+        </Provider>
       </body>
     </html>
   );
