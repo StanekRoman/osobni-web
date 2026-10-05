@@ -1,13 +1,11 @@
 import Image from "next/image";
 import NextLink from "next/link";
 
-import Logo from "@/public/signature-75x75logo.png";
-
 export default function MobileLogo() {
   return (
     <NextLink href="/" aria-label="Roman Staněk – domů">
       <Image
-        src={Logo}
+        src="/signature-75x75logo.png"
         alt="Roman Staněk"
         width={75}
         height={75}
