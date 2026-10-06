@@ -80,7 +80,7 @@ export default function DesktopNavigation() {
                       aria-label={`Otevřít menu ${item.label}`}
                     >
                       <LuChevronDown
-                        size={14}
+                        size={18}
                         style={{
                           transform: servicesOpen
                             ? "rotate(180deg)"
@@ -99,6 +99,7 @@ export default function DesktopNavigation() {
                     minW="240px"
                     p="sm"
                     bg="surfacePrimary"
+                    textStyle="nav"
                     borderRadius="md"
                     onMouseEnter={openServices}
                     onMouseLeave={scheduleCloseServices}
