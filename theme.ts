@@ -134,7 +134,7 @@ const config = defineConfig({
       nav: {
         value: {
           fontFamily: "{fonts.body}",
-          fontSize: "12px",
+          fontSize: "16px",
           fontWeight: "500",
           lineHeight: "12px",
         },

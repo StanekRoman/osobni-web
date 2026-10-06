@@ -3,6 +3,7 @@ import { Inter, Plus_Jakarta_Sans, Roboto_Serif } from "next/font/google";
 
 import { Provider } from "@/components/ui/provider";
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
@@ -42,6 +43,7 @@ export default function RootLayout({
         <Provider>
           <Header />
           {children}
+          <Footer />
         </Provider>
       </body>
     </html>
