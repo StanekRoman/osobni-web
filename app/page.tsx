@@ -1,5 +1,9 @@
-import { HStack } from "@chakra-ui/react";
+import HomeHero from "@/components/home/hero/HomeHero";
 
 export default function Home() {
-  return <HStack></HStack>;
+  return (
+    <main>
+      <HomeHero />
+    </main>
+  );
 }
