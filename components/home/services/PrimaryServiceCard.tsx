@@ -15,17 +15,21 @@ export default function PrimaryServiceCard() {
       as="article"
       direction="column"
       align="flex-start"
-      gap="30px"
-      width="550px"
-      height="650px"
-      minHeight="650px"
+      gap={{ base: "24px", md: "26px", xl: "30px" }}
+      width={{ base: "100%", xl: "550px" }}
+      height={{ base: "auto", xl: "650px" }}
+      minHeight={{ base: "auto", xl: "650px" }}
       flexShrink={0}
-      px="42px"
-      py="44px"
+      px={{ base: "24px", md: "36px", xl: "42px" }}
+      py={{ base: "30px", md: "36px", xl: "44px" }}
       bg="accentSurface"
       border="1px solid"
       borderColor="accentLight"
-      borderRadius="28px 0 0 28px"
+      borderRadius={{
+        base: "22px",
+        md: "26px",
+        xl: "28px 0 0 28px",
+      }}
       boxShadow="0 14px 40px rgba(91, 33, 182, 0.045)"
     >
       <Box px="13px" py="8px" bg="accentLight" borderRadius="full">
@@ -43,8 +47,16 @@ export default function PrimaryServiceCard() {
       <Heading
         as="h3"
         fontFamily="heading"
-        fontSize="42px"
-        lineHeight="45px"
+        fontSize={{
+          base: "30px",
+          md: "36px",
+          xl: "42px",
+        }}
+        lineHeight={{
+          base: "36px",
+          md: "41px",
+          xl: "45px",
+        }}
         fontWeight="600"
         color="textPrimary"
       >
@@ -52,9 +64,9 @@ export default function PrimaryServiceCard() {
       </Heading>
 
       <Text
-        maxWidth="450px"
-        fontSize="17px"
-        lineHeight="26px"
+        maxWidth={{ base: "100%", md: "600px", xl: "450px" }}
+        fontSize={{ base: "15px", md: "16px", xl: "17px" }}
+        lineHeight={{ base: "24px", xl: "26px" }}
         color="textSubtle"
       >
         Pro podnikání, které potřebuje první kvalitní prezentaci nebo nový
@@ -79,7 +91,7 @@ export default function PrimaryServiceCard() {
               flexShrink={0}
             />
 
-            <Text fontSize="14px" lineHeight="18px" color="textPrimary">
+            <Text fontSize="14px" lineHeight="20px" color="textPrimary">
               {feature}
             </Text>
           </Flex>
@@ -92,7 +104,7 @@ export default function PrimaryServiceCard() {
         justify="center"
         gap="10px"
         px="24px"
-        height="45px"
+        minHeight="45px"
         bg="accent"
         color="textLight"
         borderRadius="14px"

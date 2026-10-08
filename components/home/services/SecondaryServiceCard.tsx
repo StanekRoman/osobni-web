@@ -21,21 +21,35 @@ export default function SecondaryServiceCard({
 }: SecondaryServiceCardProps) {
   const isCyan = icon === "automation";
 
+  const desktopRadius =
+    index === 0 ? "0 28px 0 0" : index === 3 ? "0 0 28px 0" : "0";
+
   return (
     <Flex
       asChild
-      flex="1"
-      minHeight="142px"
-      align="center"
-      gap="24px"
-      px="28px"
-      py="26px"
+      minWidth={0}
+      height="100%"
+      minHeight={{ base: "auto", md: "185px", xl: "142px" }}
+      align={{
+        base: "flex-start",
+        md: "flex-start",
+        xl: "center",
+      }}
+      direction={{
+        base: "column",
+        xl: "row",
+      }}
+      gap={{ base: "16px", md: "18px", xl: "24px" }}
+      px={{ base: "24px", md: "26px", xl: "28px" }}
+      py={{ base: "24px", md: "26px" }}
       bg={index % 2 === 0 ? "surfaceSecondary" : "surfacePrimary"}
       border="1px solid"
       borderColor={index === 2 ? "accentLight" : "#E6E7EB"}
-      borderRadius={
-        index === 0 ? "0 28px 0 0" : index === 3 ? "0 0 28px 0" : "0"
-      }
+      borderRadius={{
+        base: "20px",
+        md: "24px",
+        xl: desktopRadius,
+      }}
       boxShadow="0 8px 26px rgba(35, 37, 38, 0.025)"
       color="textPrimary"
       textDecoration="none"
@@ -65,8 +79,15 @@ export default function SecondaryServiceCard({
           <Heading
             as="h3"
             fontFamily="heading"
-            fontSize="23px"
-            lineHeight="25px"
+            fontSize={{
+              base: "21px",
+              md: "22px",
+              xl: "23px",
+            }}
+            lineHeight={{
+              base: "25px",
+              xl: "25px",
+            }}
             fontWeight="600"
           >
             {title}
@@ -77,7 +98,12 @@ export default function SecondaryServiceCard({
           </Text>
         </Flex>
 
-        <Box color="accent" opacity="0" _groupHover={{ opacity: "1" }}>
+        <Box
+          color="accent"
+          display={{ base: "none", xl: "block" }}
+          opacity="0"
+          _groupHover={{ opacity: "1" }}
+        >
           <LuArrowRight size={18} />
         </Box>
       </Link>
