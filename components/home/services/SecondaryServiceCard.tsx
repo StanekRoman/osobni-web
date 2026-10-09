@@ -39,15 +39,15 @@ export default function SecondaryServiceCard({
         base: "column",
         xl: "row",
       }}
-      gap={{ base: "16px", md: "18px", xl: "24px" }}
-      px={{ base: "24px", md: "26px", xl: "28px" }}
-      py={{ base: "24px", md: "26px" }}
+      gap={{ base: "md", md: "18px", xl: "lg" }}
+      px={{ base: "lg", md: "26px", xl: "28px" }}
+      py={{ base: "lg", md: "26px" }}
       bg={index % 2 === 0 ? "surfaceSecondary" : "surfacePrimary"}
       border="1px solid"
-      borderColor={index === 2 ? "accentLight" : "#E6E7EB"}
+      borderColor={index === 2 ? "accentLight" : "border"}
       borderRadius={{
-        base: "20px",
-        md: "24px",
+        base: "md",
+        md: "lg",
         xl: desktopRadius,
       }}
       boxShadow="0 8px 26px rgba(35, 37, 38, 0.025)"
@@ -65,7 +65,7 @@ export default function SecondaryServiceCard({
           justify="center"
           bg={isCyan ? "blue" : "accentLight"}
           color={isCyan ? "#155E75" : "accentDark"}
-          borderRadius="15px"
+          borderRadius="icon"
           fontSize="19px"
           fontWeight="700"
         >

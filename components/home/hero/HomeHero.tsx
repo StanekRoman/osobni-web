@@ -17,7 +17,7 @@ export default function HomeHero() {
             align="center"
             gap={{
               base: "64px",
-              md: "80px",
+              md: "4xl",
               xl: "74px",
             }}
             width="100%"
@@ -40,7 +40,7 @@ export default function HomeHero() {
         bg="surfacePrimary"
         borderTop="1px solid"
         borderBottom="1px solid"
-        borderColor="#E6E7EB"
+        borderColor="border"
       >
         <Container height="100%">
           <Flex
@@ -55,11 +55,11 @@ export default function HomeHero() {
             }}
             justify="space-between"
             gap={{
-              base: "12px",
-              md: "32px",
+              base: "sm",
+              md: "xl",
             }}
             py={{
-              base: "24px",
+              base: "lg",
               md: "28px",
               xl: "0",
             }}

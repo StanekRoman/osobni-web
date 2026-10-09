@@ -21,13 +21,13 @@ export default function HomeOutcomes() {
           direction="column"
           align={{ base: "stretch", xl: "center" }}
           justify="center"
-          gap={{ base: "40px", md: "48px", xl: "60px" }}
+          gap={{ base: "40px", md: "2xl", xl: "3xl" }}
           height={{ base: "auto", xl: "100%" }}
         >
           <Flex
             direction="column"
             align="flex-start"
-            gap={{ base: "12px", md: "16px" }}
+            gap={{ base: "sm", md: "md" }}
             width="100%"
             height={{ base: "auto", xl: "128px" }}
             flexShrink={0}
@@ -74,7 +74,7 @@ export default function HomeOutcomes() {
             position="relative"
             display={{ base: "grid", md: "block" }}
             gridTemplateColumns="1fr"
-            gap={{ base: "16px", md: "0" }}
+            gap={{ base: "md", md: "0" }}
             width={{
               base: "100%",
               md: "min(100%, 600px)",

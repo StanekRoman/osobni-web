@@ -152,7 +152,7 @@ export default function MobileNavigation() {
                   borderRadius="md"
                 >
                   <NextLink href={headerCta.href} onClick={closeNavigation}>
-                    <HStack gap="8px">
+                    <HStack gap="xs">
                       <span>{headerCta.label}</span>
                       <LuArrowRight size={15} />
                     </HStack>

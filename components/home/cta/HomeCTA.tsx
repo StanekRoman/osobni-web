@@ -8,15 +8,15 @@ import { Section } from "@/components/ui/section";
 export default function HomeCTA() {
   return (
     <Section
-      bg="#232526"
+      bg="surfaceDark"
       minHeight={{ base: "auto", xl: "650px" }}
-      py={{ base: "80px", md: "100px", xl: "136px" }}
+      py={{ base: "4xl", md: "5xl", xl: "136px" }}
     >
-      <Container px={{ base: "20px", md: "32px", xl: "0" }}>
+      <Container px={{ base: "20px", md: "xl", xl: "0" }}>
         <Flex
           direction={{ base: "column", xl: "row" }}
           align={{ base: "stretch", xl: "center" }}
-          gap={{ base: "44px", md: "56px", xl: "80px" }}
+          gap={{ base: "44px", md: "56px", xl: "4xl" }}
           width="100%"
           minHeight={{ base: "auto", xl: "335px" }}
         >
@@ -24,12 +24,12 @@ export default function HomeCTA() {
           <Flex
             direction="column"
             align="flex-start"
-            gap={{ base: "20px", md: "24px" }}
+            gap={{ base: "20px", md: "lg" }}
             width={{ base: "100%", xl: "620px" }}
             flexShrink={{ base: 1, xl: 0 }}
           >
             <Text
-              color="#CFFAFE"
+              color="blue"
               fontSize={{ base: "11px", md: "13px" }}
               lineHeight={{ base: "17px", md: "19px" }}
               fontWeight="700"
@@ -52,7 +52,7 @@ export default function HomeCTA() {
                 xl: "55px",
               }}
               fontWeight="600"
-              color="#FFFFFF"
+              color="textLight"
               letterSpacing="-1px"
             >
               Pojďme najít nejkratší cestu k tomu, co má opravdu fungovat.
@@ -62,7 +62,7 @@ export default function HomeCTA() {
               maxWidth={{ base: "100%", md: "560px" }}
               fontSize={{ base: "15px", md: "17px" }}
               lineHeight={{ base: "24px", md: "27px" }}
-              color="#D6D8DD"
+              color="textLightSecondary"
             >
               Nemusíte mít připravené zadání. Stačí popsat situaci a společně
               vybereme smysluplný další krok.
@@ -77,7 +77,7 @@ export default function HomeCTA() {
               xl: "column",
             }}
             align="stretch"
-            gap={{ base: "14px", md: "16px" }}
+            gap={{ base: "14px", md: "md" }}
             width={{ base: "100%", xl: "450px" }}
             flexShrink={{ base: 1, xl: 0 }}
           >
@@ -104,15 +104,15 @@ export default function HomeCTA() {
                 md: "180px",
                 xl: "137px",
               }}
-              px={{ base: "24px", md: "28px" }}
+              px={{ base: "lg", md: "28px" }}
               py={{
                 base: "26px",
                 md: "28px",
                 xl: "26px",
               }}
-              bg="#7C3AED"
+              bg="accent"
               borderRadius="22px"
-              color="#FFFFFF"
+              color="textLight"
               textDecoration="none"
               transition="background 0.2s ease"
               _hover={{
@@ -133,19 +133,19 @@ export default function HomeCTA() {
                   }}
                   lineHeight="24px"
                   fontWeight="600"
-                  color="#FFFFFF"
+                  color="textLight"
                 >
                   Mám konkrétní projekt
                 </Heading>
 
-                <Text fontSize="13px" lineHeight="20px" color="#EDE9FE">
+                <Text fontSize="13px" lineHeight="20px" color="accentLight">
                   Popište stručně, co potřebujete. Ozvu se s dalším postupem.
                 </Text>
 
                 <Flex
                   align="center"
-                  gap="8px"
-                  color="#FFFFFF"
+                  gap="xs"
+                  color="textLight"
                   fontSize="13px"
                   lineHeight="18px"
                   fontWeight="700"
@@ -179,19 +179,19 @@ export default function HomeCTA() {
                 md: "180px",
                 xl: "156px",
               }}
-              px={{ base: "24px", md: "28px" }}
+              px={{ base: "lg", md: "28px" }}
               py={{
                 base: "26px",
                 md: "28px",
                 xl: "26px",
               }}
-              bg="#FFFFFF"
+              bg="surfacePrimary"
               borderRadius="22px"
-              color="#232526"
+              color="textPrimary"
               textDecoration="none"
               transition="background 0.2s ease"
               _hover={{
-                bg: "#F5F1FF",
+                bg: "accentSurface",
               }}
               _focusVisible={{
                 outline: "3px solid #CFFAFE",
@@ -208,20 +208,20 @@ export default function HomeCTA() {
                   }}
                   lineHeight="24px"
                   fontWeight="600"
-                  color="#232526"
+                  color="textPrimary"
                 >
                   Chci to nejdřív probrat
                 </Heading>
 
-                <Text fontSize="13px" lineHeight="20px" color="#666A73">
+                <Text fontSize="13px" lineHeight="20px" color="textSubtle">
                   Krátký hovor bez složité přípravy. Projdeme situaci a
                   možnosti.
                 </Text>
 
                 <Flex
                   align="center"
-                  gap="8px"
-                  color="#7C3AED"
+                  gap="xs"
+                  color="accent"
                   fontSize="13px"
                   lineHeight="18px"
                   fontWeight="700"

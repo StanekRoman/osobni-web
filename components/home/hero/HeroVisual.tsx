@@ -48,9 +48,9 @@ export default function HeroVisual() {
           top="114.88px"
           bg="surfacePrimary"
           border="1px solid"
-          borderColor="#E6E7EB"
+          borderColor="border"
           boxShadow="0 22px 54px rgba(91, 33, 182, 0.1)"
-          borderRadius="24px"
+          borderRadius="lg"
           transform="rotate(4deg)"
           overflow="hidden"
         >
@@ -60,7 +60,7 @@ export default function HeroVisual() {
             width="380px"
             height="34px"
             px="14px"
-            bg="#F5F6F8"
+            bg="background"
           >
             <Box boxSize="6px" borderRadius="full" bg="#EF4444" />
             <Box boxSize="6px" borderRadius="full" bg="#F59E0B" />
@@ -73,7 +73,7 @@ export default function HeroVisual() {
             gap="18px"
             width="380px"
             height="266px"
-            p="24px"
+            p="lg"
             bg="surfacePrimary"
           >
             <Flex
@@ -84,13 +84,7 @@ export default function HeroVisual() {
               bg="accentLight"
               borderRadius="999px"
             >
-              <Text
-                fontSize="11px"
-                lineHeight="11px"
-                fontWeight="600"
-                letterSpacing="0.3px"
-                color="accentDark"
-              >
+              <Text textStyle="label" color="accentDark">
                 Web, který funguje
               </Text>
             </Flex>
@@ -108,7 +102,7 @@ export default function HeroVisual() {
               který přivádí klienty
             </Text>
 
-            <Flex align="flex-start" gap="16px" width="332px" height="112px">
+            <Flex align="flex-start" gap="md" width="332px" height="112px">
               <Flex
                 direction="column"
                 align="flex-start"
@@ -119,14 +113,14 @@ export default function HeroVisual() {
                 <Box
                   width="132px"
                   height="8px"
-                  bg="#E6E7EB"
+                  bg="border"
                   borderRadius="4px"
                 />
 
                 <Box
                   width="108px"
                   height="8px"
-                  bg="#E6E7EB"
+                  bg="border"
                   borderRadius="4px"
                 />
 
@@ -160,9 +154,9 @@ export default function HeroVisual() {
           p="20px"
           bg="surfacePrimary"
           border="1px solid"
-          borderColor="#E6E7EB"
+          borderColor="border"
           boxShadow="0 16px 40px rgba(35, 37, 38, 0.08)"
-          borderRadius="20px"
+          borderRadius="md"
           transform="rotate(-3deg)"
         >
           {benefits.map(
@@ -170,7 +164,7 @@ export default function HeroVisual() {
               <Flex
                 key={title}
                 align="center"
-                gap="12px"
+                gap="sm"
                 width="210px"
                 height="50px"
               >
@@ -181,7 +175,7 @@ export default function HeroVisual() {
                   height="50px"
                   flexShrink="0"
                   bg={background}
-                  borderRadius="15px"
+                  borderRadius="icon"
                 >
                   <Icon size={19} strokeWidth={2} color={color} />
                 </Flex>

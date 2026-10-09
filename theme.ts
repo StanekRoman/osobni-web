@@ -10,6 +10,7 @@ const config = defineConfig({
         textLight: { value: "#FFFFFF" },
         textSubtle: { value: "#666A73" },
         textSubtleLight: { value: "#D6B8DD" },
+        textLightSecondary: { value: "#D6D8DD" },
 
         surfacePrimary: { value: "#FFFFFF" },
         surfaceSecondary: { value: "#F8F9FA" },
@@ -23,6 +24,8 @@ const config = defineConfig({
 
         green: { value: "#DCFCE7" },
         blue: { value: "#CFFAFE" },
+
+        border: { value: "#E6E7EB" },
       },
 
       fonts: {
@@ -39,6 +42,7 @@ const config = defineConfig({
 
       radii: {
         sm: { value: "14px" },
+        icon: { value: "15px" },
         md: { value: "20px" },
         lg: { value: "24px" },
         xl: { value: "28px" },
@@ -131,12 +135,24 @@ const config = defineConfig({
         },
       },
 
+      // Zachováváme aktuální 16px kvůli vizuální shodě Headeru.
+      // Projektový Design systém uvádí 12px.
       nav: {
         value: {
           fontFamily: "{fonts.body}",
           fontSize: "16px",
           fontWeight: "500",
           lineHeight: "12px",
+        },
+      },
+
+      label: {
+        value: {
+          fontFamily: "{fonts.body}",
+          fontSize: "11px",
+          fontWeight: "600",
+          lineHeight: "11px",
+          letterSpacing: "0.3px",
         },
       },
     },

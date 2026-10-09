@@ -15,12 +15,12 @@ export default function PrimaryServiceCard() {
       as="article"
       direction="column"
       align="flex-start"
-      gap={{ base: "24px", md: "26px", xl: "30px" }}
+      gap={{ base: "lg", md: "26px", xl: "30px" }}
       width={{ base: "100%", xl: "550px" }}
       height={{ base: "auto", xl: "650px" }}
       minHeight={{ base: "auto", xl: "650px" }}
       flexShrink={0}
-      px={{ base: "24px", md: "36px", xl: "42px" }}
+      px={{ base: "lg", md: "36px", xl: "42px" }}
       py={{ base: "30px", md: "36px", xl: "44px" }}
       bg="accentSurface"
       border="1px solid"
@@ -32,14 +32,8 @@ export default function PrimaryServiceCard() {
       }}
       boxShadow="0 14px 40px rgba(91, 33, 182, 0.045)"
     >
-      <Box px="13px" py="8px" bg="accentLight" borderRadius="full">
-        <Text
-          color="accentDark"
-          fontSize="11px"
-          lineHeight="11px"
-          fontWeight="600"
-          letterSpacing="0.3px"
-        >
+      <Box px="13px" py="xs" bg="accentLight" borderRadius="full">
+        <Text color="accentDark" textStyle="label">
           Nejčastější řešení
         </Text>
       </Box>
@@ -82,7 +76,7 @@ export default function PrimaryServiceCard() {
         p="0"
       >
         {features.map((feature) => (
-          <Flex as="li" key={feature} align="center" gap="12px">
+          <Flex as="li" key={feature} align="center" gap="sm">
             <Box
               width="8px"
               height="8px"
@@ -103,11 +97,11 @@ export default function PrimaryServiceCard() {
         align="center"
         justify="center"
         gap="10px"
-        px="24px"
+        px="lg"
         minHeight="45px"
         bg="accent"
         color="textLight"
-        borderRadius="14px"
+        borderRadius="sm"
         fontSize="14px"
         fontWeight="600"
         _hover={{ bg: "accentDark" }}

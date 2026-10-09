@@ -19,9 +19,9 @@ export default function HeroContent() {
         xl: "flex-start",
       }}
       gap={{
-        base: "24px",
+        base: "lg",
         md: "28px",
-        xl: "24px",
+        xl: "lg",
       }}
       width={{ base: "100%", md: "610px" }}
       maxWidth="610px"
@@ -35,13 +35,7 @@ export default function HeroContent() {
         bg="accentLight"
         borderRadius="999px"
       >
-        <Text
-          fontSize="11px"
-          lineHeight="11px"
-          fontWeight="600"
-          letterSpacing="0.3px"
-          color="accentDark"
-        >
+        <Text textStyle="label" color="accentDark">
           Weby, které dávají smysl
         </Text>
       </Flex>
@@ -135,13 +129,11 @@ export default function HeroContent() {
             base: "48px",
             md: "45px",
           }}
-          px="24px"
+          px="lg"
           bg="accent"
-          borderRadius="14px"
+          borderRadius="sm"
           color="textLight"
-          fontSize="14px"
-          lineHeight="15px"
-          fontWeight="600"
+          textStyle="button"
           textDecoration="none"
           _hover={{
             bg: "accentDark",
@@ -171,15 +163,13 @@ export default function HeroContent() {
             base: "48px",
             md: "47px",
           }}
-          px="24px"
+          px="lg"
           bg="surfacePrimary"
           border="1px solid"
-          borderColor="#E6E7EB"
-          borderRadius="14px"
+          borderColor="border"
+          borderRadius="sm"
           color="textPrimary"
-          fontSize="14px"
-          lineHeight="15px"
-          fontWeight="600"
+          textStyle="button"
           textDecoration="none"
           _hover={{
             textDecoration: "none",
@@ -201,11 +191,11 @@ export default function HeroContent() {
           md: "repeat(4, auto)",
         }}
         columnGap={{
-          base: "16px",
+          base: "md",
           md: "20px",
         }}
         rowGap={{
-          base: "16px",
+          base: "md",
           md: "0",
         }}
         width={{
@@ -217,7 +207,7 @@ export default function HeroContent() {
         }}
       >
         {benefits.map((benefit) => (
-          <Flex key={benefit} align="center" gap="8px" height="12px">
+          <Flex key={benefit} align="center" gap="xs" height="12px">
             <Box
               display="flex"
               alignItems="center"

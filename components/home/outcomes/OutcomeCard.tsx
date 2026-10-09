@@ -44,7 +44,7 @@ export default function OutcomeCard({
       align="flex-start"
       gap={{
         base: "20px",
-        md: "24px",
+        md: "lg",
       }}
       width={{
         base: "100%",
@@ -64,9 +64,9 @@ export default function OutcomeCard({
       }}
       bg="surfacePrimary"
       border="1px solid"
-      borderColor="#E6E7EB"
+      borderColor="border"
       boxShadow="0 8px 30px rgba(35, 37, 38, 0.035)"
-      borderRadius="20px"
+      borderRadius="md"
     >
       <Box
         width="42px"

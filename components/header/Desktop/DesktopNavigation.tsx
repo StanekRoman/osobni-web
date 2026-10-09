@@ -27,7 +27,7 @@ export default function DesktopNavigation() {
   };
 
   return (
-    <HStack gap="32px">
+    <HStack gap="xl">
       <HStack as="nav" aria-label="Hlavní navigace" gap="30px">
         {navigation.map((item) => {
           if (!item.children) {
@@ -130,7 +130,7 @@ export default function DesktopNavigation() {
         borderRadius="md"
       >
         <NextLink href={headerCta.href}>
-          <HStack gap="8px">
+          <HStack gap="xs">
             <span>{headerCta.label}</span>
             <LuArrowRight size={15} />
           </HStack>
