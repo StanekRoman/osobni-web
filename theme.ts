@@ -135,8 +135,6 @@ const config = defineConfig({
         },
       },
 
-      // Zachováváme aktuální 16px kvůli vizuální shodě Headeru.
-      // Projektový Design systém uvádí 12px.
       nav: {
         value: {
           fontFamily: "{fonts.body}",
