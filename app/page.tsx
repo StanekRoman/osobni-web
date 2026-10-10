@@ -1,3 +1,4 @@
+import HomeAutomation from "@/components/home/automation/HomeAutomation";
 import HomeCTA from "@/components/home/cta/HomeCTA";
 import HomeHero from "@/components/home/hero/HomeHero";
 import HomeOutcomes from "@/components/home/outcomes/HomeOutcomes";
@@ -12,6 +13,7 @@ export default function Home() {
       <HomeServices />
       <HomeCTA />
       <HomeProcess />
+      <HomeAutomation />
     </main>
   );
 }
