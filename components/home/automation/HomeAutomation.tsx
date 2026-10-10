@@ -79,8 +79,10 @@ export default function HomeAutomation() {
               lineHeight="15px"
               fontWeight="600"
               textDecoration="none"
+              transition="ease-in-out 150ms"
               _hover={{
                 borderColor: "accent",
+                background: "accentSurface",
               }}
             >
               <NextLink href="/sluzby/automatizace-a-nastroje">

@@ -45,7 +45,7 @@ export default function HeroVisual() {
           width="380px"
           height="300px"
           left="38px"
-          top="114.88px"
+          top="115px"
           bg="surfacePrimary"
           border="1px solid"
           borderColor="border"

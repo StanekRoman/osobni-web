@@ -53,7 +53,7 @@ export default function SecondaryServiceCard({
       boxShadow="0 8px 26px rgba(35, 37, 38, 0.025)"
       color="textPrimary"
       textDecoration="none"
-      transition="background 0.2s ease"
+      transition="background 150ms ease"
       _hover={{ bg: "accentSurface" }}
     >
       <Link href={href}>

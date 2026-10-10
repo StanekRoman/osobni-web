@@ -13,11 +13,7 @@ export default function HeroContent() {
   return (
     <Flex
       direction="column"
-      align={{
-        base: "flex-start",
-        md: "center",
-        xl: "flex-start",
-      }}
+      align="flex-start"
       gap={{
         base: "lg",
         md: "28px",
@@ -64,7 +60,6 @@ export default function HeroContent() {
           color="textPrimary"
           textAlign={{
             base: "center",
-            md: "center",
             xl: "left",
           }}
         >
@@ -90,7 +85,6 @@ export default function HeroContent() {
         color="textSubtle"
         textAlign={{
           base: "center",
-          md: "center",
           xl: "left",
         }}
       >
@@ -111,7 +105,6 @@ export default function HeroContent() {
         gap="14px"
         width={{
           base: "100%",
-          md: "100%",
           xl: "auto",
         }}
       >
@@ -135,9 +128,9 @@ export default function HeroContent() {
           color="textLight"
           textStyle="button"
           textDecoration="none"
+          transition="ease-in-out 150ms"
           _hover={{
             bg: "accentDark",
-            textDecoration: "none",
           }}
         >
           <Link href="/nezavazne-poptat">
@@ -171,8 +164,10 @@ export default function HeroContent() {
           color="textPrimary"
           textStyle="button"
           textDecoration="none"
+          transition="ease-in-out 150ms"
           _hover={{
-            textDecoration: "none",
+            borderColor: "accent",
+            background: "accentSurface",
           }}
         >
           <Link href="/sluzby">
@@ -203,11 +198,18 @@ export default function HeroContent() {
           md: "600px",
         }}
         justifyContent={{
+          base: "space-around",
           xl: "start",
         }}
       >
         {benefits.map((benefit) => (
-          <Flex key={benefit} align="center" gap="xs" height="12px">
+          <Flex
+            key={benefit}
+            align="center"
+            justify="center"
+            gap="xs"
+            height="12px"
+          >
             <Box
               display="flex"
               alignItems="center"

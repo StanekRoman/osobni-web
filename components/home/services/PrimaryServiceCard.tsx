@@ -104,8 +104,8 @@ export default function PrimaryServiceCard() {
         borderRadius="sm"
         fontSize="14px"
         fontWeight="600"
+        transition="background 150ms ease"
         _hover={{ bg: "accentDark" }}
-        transition="background 0.2s ease"
       >
         <Link href="/sluzby/tvorba-webu">
           Tvorba nového webu

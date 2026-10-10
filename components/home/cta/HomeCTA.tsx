@@ -114,7 +114,7 @@ export default function HomeCTA() {
               borderRadius="22px"
               color="textLight"
               textDecoration="none"
-              transition="background 0.2s ease"
+              transition="background 150ms ease-in-out"
               _hover={{
                 bg: "#6D28D9",
               }}
@@ -189,9 +189,9 @@ export default function HomeCTA() {
               borderRadius="22px"
               color="textPrimary"
               textDecoration="none"
-              transition="background 0.2s ease"
+              transition="opacity 150ms ease-in-out"
               _hover={{
-                bg: "accentSurface",
+                opacity: "0.9",
               }}
               _focusVisible={{
                 outline: "3px solid #CFFAFE",

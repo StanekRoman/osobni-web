@@ -38,6 +38,8 @@ export default function DesktopNavigation() {
                 textStyle="nav"
                 color="textPrimary"
                 textDecoration="none"
+                transition="opacity 150ms ease"
+                _hover={{ opacity: "0.7" }}
               >
                 <NextLink href={item.href}>{item.label}</NextLink>
               </Link>
@@ -52,12 +54,14 @@ export default function DesktopNavigation() {
                 setServicesOpen(open);
               }}
               positioning={{
-                placement: "bottom-start",
+                placement: "bottom",
               }}
             >
               <Box
                 onMouseEnter={openServices}
                 onMouseLeave={scheduleCloseServices}
+                transition="opacity 150ms ease"
+                _hover={{ opacity: "0.7" }}
               >
                 <HStack gap="4px">
                   <Link
@@ -128,6 +132,8 @@ export default function DesktopNavigation() {
         bg="textPrimary"
         color="textLight"
         borderRadius="md"
+        transition="opacity 150ms ease"
+        _hover={{ opacity: "0.8" }}
       >
         <NextLink href={headerCta.href}>
           <HStack gap="xs">
