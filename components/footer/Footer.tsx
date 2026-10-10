@@ -1,8 +1,8 @@
 import { Box, Flex, Grid, Stack, Text } from "@chakra-ui/react";
 import { Container } from "../ui/container";
+import FooterLink from "./FooterLink";
 import FooterNavigation from "./FooterNavigation";
 import { footerOther, footerServices } from "./navigationData";
-import FooterLink from "./FooterLink";
 
 export default function Footer() {
   return (
@@ -11,13 +11,10 @@ export default function Footer() {
         <Grid
           templateColumns={{
             base: "1fr",
-            md: "1.5fr 1fr 1fr",
+            md: "1fr 1.5fr",
           }}
-          gap={{
-            base: "3xl",
-            md: "2xl",
-          }}
-          pt={{ base: "3xl", md: "4xl" }}
+          gap="2xl"
+          pt={{ base: "2xl", md: "4xl" }}
           pb="3xl"
         >
           <Stack gap="sm">
@@ -34,9 +31,17 @@ export default function Footer() {
               firmy.
             </Text>
           </Stack>
-          <FooterNavigation title="Služby" items={footerServices} />
 
-          <FooterNavigation title="Další" items={footerOther} />
+          <Stack
+            direction="row"
+            justify="center"
+            align="flex-start"
+            gap={{ base: "xl", md: "2xl" }}
+            width="100%"
+          >
+            <FooterNavigation title="Služby" items={footerServices} />
+            <FooterNavigation title="Další" items={footerOther} />
+          </Stack>
         </Grid>
         <Flex
           direction={{
@@ -44,7 +49,7 @@ export default function Footer() {
             md: "row",
           }}
           align={{
-            base: "flex-start",
+            base: "center",
             md: "center",
           }}
           justify="space-between"
@@ -53,24 +58,25 @@ export default function Footer() {
           borderTopWidth="1px"
           borderColor="surfaceDarkSecondary"
         >
-          <Text textStyle="bodySmall" color="textSubtleLight">
-            © Roman Staněk {new Date().getFullYear()}
-          </Text>
           <Flex
-            direction={{
-              base: "column",
-              sm: "row",
-            }}
-            gap={{
-              base: "sm",
-              sm: "lg",
-            }}
+            direction="row"
+            align="center"
+            justify="center"
+            width={{ base: "100%", md: "auto" }}
+            gap="lg"
           >
             <FooterLink href="/obchodni-podminky">Obchodní podmínky</FooterLink>
             <FooterLink href="/ochrana-osobnich-udaju">
               Ochrana osobních údajů
             </FooterLink>
           </Flex>
+          <Text
+            textStyle="bodySmall"
+            color="textSubtleLight"
+            alignItems="flex-start"
+          >
+            © Roman Staněk {new Date().getFullYear()}
+          </Text>
         </Flex>
       </Container>
     </Box>
