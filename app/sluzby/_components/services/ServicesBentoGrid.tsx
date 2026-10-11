@@ -2,7 +2,7 @@ import { Box, Flex, Grid, Link as ChakraLink, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import { LuArrowRight } from "react-icons/lu";
 
-import ServiceBentoCard from "./BentoCard";
+import ServiceBentoCard from "./ServicesBentoCard";
 import { services } from "./services";
 
 export default function ServicesBentoGrid() {

@@ -2,8 +2,8 @@ import { Flex } from "@chakra-ui/react";
 
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
-import ServicesBentoHeading from "./BentoHeading";
-import ServicesBentoGrid from "./BentoGrid";
+import ServicesBentoHeading from "./ServicesBentoHeading";
+import ServicesBentoGrid from "./ServicesBentoGrid";
 
 export default function ServicesBento() {
   return (

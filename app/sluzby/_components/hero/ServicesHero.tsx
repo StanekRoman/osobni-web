@@ -2,8 +2,8 @@ import { Flex } from "@chakra-ui/react";
 
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
-import ServicesHeroContent from "./HeroContent";
-import ServicesHeroVisual from "./HeroVisual";
+import ServicesHeroContent from "./ServicesHeroContent";
+import ServicesHeroVisual from "./ServicesHeroVisual";
 
 export default function ServicesHero() {
   return (
