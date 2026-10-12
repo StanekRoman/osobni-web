@@ -66,7 +66,7 @@ export default function ServicesBentoGrid() {
         </Text>
 
         <Text fontSize="14px" lineHeight="21px" color="textSubtle" flex="1">
-          Menší navazující práce podle konkrétního projektu.
+          Menší navazující práce podle konkrétního projektu
         </Text>
 
         <ChakraLink

@@ -44,7 +44,7 @@ export default function ServicesHeroContent() {
         }}
         color="textPrimary"
       >
-        Nejdřív problém. Potom správné řešení.
+        Nejdřív problém, potom správné řešení
       </Text>
 
       <Text
@@ -55,8 +55,8 @@ export default function ServicesHeroContent() {
         fontWeight="400"
         color="textSubtle"
       >
-        Konkrétní řešení skládám podle toho, co má projekt skutečně vyřešit
-        {" — "}ne podle předem připraveného balíčku.
+        Konkrétní řešení skládám podle toho, co má projekt skutečně vyřešit, ne
+        podle předem připraveného balíčku
       </Text>
 
       <ChakraLink

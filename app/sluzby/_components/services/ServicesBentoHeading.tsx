@@ -27,7 +27,7 @@ export default function ServicesBentoHeading() {
         fontWeight="600"
         color="textPrimary"
       >
-        Od webu po praktický nástroj.
+        Od webu po praktický nástroj
       </Text>
 
       <Text
@@ -36,8 +36,8 @@ export default function ServicesBentoHeading() {
         lineHeight="25px"
         color="textSubtle"
       >
-        Každá služba má vlastní roli. Podle projektu se mohou přirozeně
-        kombinovat.
+        Každá služba má vlastní roli, podle projektu se mohou přirozeně
+        kombinovat
       </Text>
     </Flex>
   );

@@ -19,7 +19,7 @@ export const services: Service[] = [
   {
     id: "tvorba-webu",
     title: "Tvorba webů",
-    description: "Nový web od struktury a obsahu po technickou realizaci.",
+    description: "Nový web od struktury a obsahu po technickou realizaci",
     href: "/sluzby/tvorba-webu",
     iconLabel: "W",
     background: "surfaceDark",
@@ -31,7 +31,7 @@ export const services: Service[] = [
   {
     id: "webove-aplikace",
     title: "Webové aplikace",
-    description: "Když prezentace nestačí a řešení potřebuje vlastní logiku.",
+    description: "Když prezentace nestačí a řešení potřebuje vlastní logiku",
     href: "/sluzby/webove-aplikace",
     icon: LuArrowUpRight,
     background: "accentSurface",
@@ -41,7 +41,7 @@ export const services: Service[] = [
   {
     id: "redesigny",
     title: "Redesigny",
-    description: "Nový směr pro web, který už neodpovídá dnešnímu podnikání.",
+    description: "Nový směr pro web, který už neodpovídá dnešnímu podnikání",
     href: "/sluzby/redesigny",
     icon: LuRotateCw,
     background: "background",
@@ -51,7 +51,7 @@ export const services: Service[] = [
   {
     id: "sprava-a-servis",
     title: "Správa a servis",
-    description: "Průběžné úpravy, opravy a další rozvoj.",
+    description: "Průběžné úpravy, opravy a další rozvoj",
     href: "/sluzby/sprava-a-servis",
     icon: LuPlus,
     background: "surfacePrimary",
@@ -61,7 +61,7 @@ export const services: Service[] = [
   {
     id: "automatizace-a-nastroje",
     title: "Automatizace a nástroje",
-    description: "Méně ruční opakované práce díky jednoduchému nástroji.",
+    description: "Méně ruční opakované práce díky jednoduchému nástroji",
     href: "/sluzby/automatizace-a-nastroje",
     icon: LuZap,
     background: "accentSurface",
