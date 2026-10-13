@@ -1,3 +1,4 @@
+import { LuCheckCheck, LuDatabase, LuTarget, LuWorkflow } from "react-icons/lu";
 import type { ServiceDetailData } from "../types";
 
 export const weboveAplikace = {
@@ -26,6 +27,39 @@ export const weboveAplikace = {
         {
           title: "Výstup",
           description: "Výsledek je srozumitelný a použitelný.",
+        },
+      ],
+    },
+  },
+
+  approach: {
+    content: {
+      eyebrow: "Jak o aplikaci přemýšlím",
+      heading: "Nejdřív tok. Potom obrazovky.",
+      description:
+        "Aplikace musí mít jasný účel a jednoduchou cestu uživatele.",
+    },
+    visual: {
+      steps: [
+        {
+          title: "Úloha",
+          description: "Co chce uživatel dokončit?",
+          icon: LuTarget,
+        },
+        {
+          title: "Data",
+          description: "Co aplikace potřebuje znát?",
+          icon: LuDatabase,
+        },
+        {
+          title: "Akce",
+          description: "Co se má stát po vstupu?",
+          icon: LuWorkflow,
+        },
+        {
+          title: "Výsledek",
+          description: "Jak poznáme, že je hotovo?",
+          icon: LuCheckCheck,
         },
       ],
     },

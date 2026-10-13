@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 
 import ServiceHero from "./_components/hero/ServiceHero";
 import { getServiceDetail, serviceDetails } from "./service-details";
+import ServiceApproach from "./_components/approach/ServiceApproach";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -26,6 +27,7 @@ export default async function ServiceDetailPage({ params }: Props) {
   return (
     <main>
       <ServiceHero {...service.hero} />
+      <ServiceApproach {...service.approach} />
     </main>
   );
 }

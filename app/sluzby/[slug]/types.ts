@@ -1,3 +1,4 @@
+import type { IconType } from "react-icons";
 export interface ServiceHeroStep {
   title: string;
   description: string;
@@ -19,6 +20,23 @@ export interface ServiceHeroData {
   };
 }
 
+export interface ServiceApproachStep {
+  title: string;
+  description: string;
+  icon: IconType;
+}
+export interface ServiceApproachData {
+  content: {
+    eyebrow: string;
+    heading: string;
+    description: string;
+  };
+  visual: {
+    steps: readonly ServiceApproachStep[];
+  };
+}
+
 export interface ServiceDetailData {
   hero: ServiceHeroData;
+  approach: ServiceApproachData;
 }
