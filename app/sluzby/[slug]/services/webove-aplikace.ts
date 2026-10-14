@@ -1,4 +1,12 @@
-import { LuCheckCheck, LuDatabase, LuTarget, LuWorkflow } from "react-icons/lu";
+import {
+  LuArrowUpRight,
+  LuCheck,
+  LuCheckCheck,
+  LuDatabase,
+  LuDiamond,
+  LuTarget,
+  LuWorkflow,
+} from "react-icons/lu";
 import type { ServiceDetailData } from "../types";
 
 export const weboveAplikace = {
@@ -60,6 +68,34 @@ export const weboveAplikace = {
           title: "Výsledek",
           description: "Jak poznáme, že je hotovo?",
           icon: LuCheckCheck,
+        },
+      ],
+    },
+  },
+
+  benefits: {
+    content: {
+      eyebrow: "Co má řešení přinést",
+      heading: "Funkce mají sloužit procesu.",
+      description:
+        "Nejde o počet obrazovek, ale o to, jak spolu jednotlivé části aplikace fungují.",
+    },
+    visual: {
+      items: [
+        {
+          title: "Srozumitelné UX",
+          description: "Každý krok má jasný účel.",
+          icon: LuArrowUpRight,
+        },
+        {
+          title: "Vlastní logika",
+          description: "Funkce odpovídají konkrétnímu procesu.",
+          icon: LuDiamond,
+        },
+        {
+          title: "Možnost rozvoje",
+          description: "Architektura může růst s potřebami projektu.",
+          icon: LuCheck,
         },
       ],
     },

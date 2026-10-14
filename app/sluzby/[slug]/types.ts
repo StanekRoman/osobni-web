@@ -36,7 +36,25 @@ export interface ServiceApproachData {
   };
 }
 
+export interface ServiceBenefitItem {
+  title: string;
+  description: string;
+  icon: IconType;
+}
+
+export interface ServiceBenefitsData {
+  content: {
+    eyebrow: string;
+    heading: string;
+    description: string;
+  };
+  visual: {
+    items: readonly ServiceBenefitItem[];
+  };
+}
+
 export interface ServiceDetailData {
   hero: ServiceHeroData;
   approach: ServiceApproachData;
+  benefits: ServiceBenefitsData;
 }
