@@ -84,10 +84,30 @@ export interface ServiceProcessData {
     steps: readonly ServiceProcessStep[];
   };
 }
+export interface ServiceFaqItem {
+  question: string;
+  answer: string;
+}
+
+export interface ServiceFaqData {
+  content: {
+    eyebrow: string;
+    heading: string;
+    description: string;
+  };
+  items: readonly ServiceFaqItem[];
+}
+export interface ServiceCtaData {
+  eyebrow: string;
+  heading: string;
+  description: string;
+}
 export interface ServiceDetailData {
   hero: ServiceHeroData;
   approach: ServiceApproachData;
   benefits: ServiceBenefitsData;
   pricing: ServicePricingData;
   process: ServiceProcessData;
+  faq: ServiceFaqData;
+  cta: ServiceCtaData;
 }
