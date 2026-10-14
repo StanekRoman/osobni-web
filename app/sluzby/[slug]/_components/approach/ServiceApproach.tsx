@@ -17,10 +17,12 @@ export default function ServiceApproach({
       <Container px={{ base: "20px", md: "32px", xl: "0" }}>
         <Flex
           minHeight={{ xl: "700px" }}
-          direction={{ base: "column", xl: "row" }}
-          align={{ base: "stretch", xl: "center" }}
-          justify={{ xl: "space-between" }}
-          gap={{ base: "40px", md: "48px", xl: "74px" }}
+          width="100%"
+          maxWidth={{ md: "704px", xl: "none" }}
+          mx="auto"
+          direction={{ base: "column", md: "row" }}
+          align={{ base: "stretch", md: "center" }}
+          gap={{ base: "40px", md: "32px", xl: "74px" }}
           py={{ base: "64px", md: "88px", xl: "0" }}
         >
           <ServiceApproachContent {...content} />

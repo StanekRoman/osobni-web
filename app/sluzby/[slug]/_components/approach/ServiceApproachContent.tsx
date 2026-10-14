@@ -14,8 +14,9 @@ export default function ServiceApproachContent({
       direction="column"
       align="flex-start"
       gap="16px"
-      width={{ base: "100%", xl: "520px" }}
-      flexShrink={0}
+      width={{ base: "100%", md: "auto", xl: "520px" }}
+      flex={{ base: "none", md: "1", xl: "none" }}
+      minWidth="0"
     >
       <Text
         fontFamily="body"
@@ -31,8 +32,8 @@ export default function ServiceApproachContent({
       <Text
         as="h2"
         fontFamily="heading"
-        fontSize={{ base: "32px", md: "38px", xl: "44px" }}
-        lineHeight={{ base: "38px", md: "44px", xl: "48px" }}
+        fontSize={{ base: "32px", md: "30px", xl: "44px" }}
+        lineHeight={{ base: "38px", md: "36px", xl: "48px" }}
         fontWeight="600"
         color="#FFFFFF"
       >

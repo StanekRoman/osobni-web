@@ -10,9 +10,9 @@ export default function ServiceApproachVisual({ steps }: Props) {
   return (
     <Flex
       direction="column"
-      width={{ base: "100%", xl: "540px" }}
-      maxW={{ base: "540px", xl: "none" }}
-      alignSelf={{ base: "center", xl: "auto" }}
+      width={{ base: "100%", md: "340px", xl: "540px" }}
+      maxWidth={{ base: "540px", xl: "none" }}
+      alignSelf={{ base: "center", md: "auto" }}
       flexShrink={0}
     >
       {steps.map((step, index) => {
