@@ -1,4 +1,5 @@
 import type { IconType } from "react-icons";
+
 export interface ServiceHeroStep {
   title: string;
   description: string;
@@ -68,9 +69,25 @@ export interface ServicePricingData {
   };
 }
 
+export interface ServiceProcessStep {
+  title: string;
+  description: string;
+}
+
+export interface ServiceProcessData {
+  content: {
+    eyebrow: string;
+    heading: string;
+    description: string;
+  };
+  visual: {
+    steps: readonly ServiceProcessStep[];
+  };
+}
 export interface ServiceDetailData {
   hero: ServiceHeroData;
   approach: ServiceApproachData;
   benefits: ServiceBenefitsData;
   pricing: ServicePricingData;
+  process: ServiceProcessData;
 }

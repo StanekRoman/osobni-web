@@ -125,4 +125,32 @@ export const weboveAplikace = {
       ],
     },
   },
+
+  process: {
+    content: {
+      eyebrow: "Jak probíhá spolupráce",
+      heading: "Přehledný proces od prvního kontextu po předání.",
+      description: "Každý krok má svůj důvod. Bez procesního chaosu.",
+    },
+    visual: {
+      steps: [
+        {
+          title: "Proces",
+          description: "Rozepíšeme současný nebo nový pracovní tok.",
+        },
+        {
+          title: "UX",
+          description: "Navrhnu obrazovky a jejich návaznosti.",
+        },
+        {
+          title: "Vývoj",
+          description: "Implementace logiky a rozhraní.",
+        },
+        {
+          title: "Testování",
+          description: "Ověření hlavních scénářů před předáním.",
+        },
+      ],
+    },
+  },
 } satisfies ServiceDetailData;

@@ -5,6 +5,7 @@ import { getServiceDetail, serviceDetails } from "./service-details";
 import ServiceApproach from "./_components/approach/ServiceApproach";
 import ServiceBenefits from "./_components/benefits/ServiceBenefits";
 import ServicePricing from "./_components/pricing/ServicePricing";
+import ServiceProcess from "./_components/process/ServiceProcess";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -32,6 +33,7 @@ export default async function ServiceDetailPage({ params }: Props) {
       <ServiceApproach {...service.approach} />
       <ServiceBenefits {...service.benefits} />
       <ServicePricing {...service.pricing} />
+      <ServiceProcess {...service.process} />
     </main>
   );
 }
