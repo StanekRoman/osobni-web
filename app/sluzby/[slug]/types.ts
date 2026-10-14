@@ -52,9 +52,25 @@ export interface ServiceBenefitsData {
     items: readonly ServiceBenefitItem[];
   };
 }
+export interface ServicePricingFactor {
+  title: string;
+  description: string;
+}
+
+export interface ServicePricingData {
+  content: {
+    eyebrow: string;
+    heading: string;
+    description: string;
+  };
+  visual: {
+    factors: readonly ServicePricingFactor[];
+  };
+}
 
 export interface ServiceDetailData {
   hero: ServiceHeroData;
   approach: ServiceApproachData;
   benefits: ServiceBenefitsData;
+  pricing: ServicePricingData;
 }

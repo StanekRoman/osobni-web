@@ -100,4 +100,29 @@ export const weboveAplikace = {
       ],
     },
   },
+
+  pricing: {
+    content: {
+      eyebrow: "Cena a rozsah",
+      heading: "Rozsah aplikace určuje logika a počet klíčových funkcí.",
+      description:
+        "Konkrétní cenu určuje rozsah, obsah, funkce a náročnost realizace. Nejdřív si ujasníme, co má řešení skutečně zvládnout.",
+    },
+    visual: {
+      factors: [
+        {
+          title: "Rozsah",
+          description: "Kolik stránek, stavů nebo obrazovek řešíme.",
+        },
+        {
+          title: "Funkce",
+          description: "Co má řešení umět nad rámec prezentace.",
+        },
+        {
+          title: "Obsah",
+          description: "Co je připravené a co je potřeba vytvořit.",
+        },
+      ],
+    },
+  },
 } satisfies ServiceDetailData;

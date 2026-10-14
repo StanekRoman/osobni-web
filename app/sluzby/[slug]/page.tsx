@@ -4,6 +4,7 @@ import ServiceHero from "./_components/hero/ServiceHero";
 import { getServiceDetail, serviceDetails } from "./service-details";
 import ServiceApproach from "./_components/approach/ServiceApproach";
 import ServiceBenefits from "./_components/benefits/ServiceBenefits";
+import ServicePricing from "./_components/pricing/ServicePricing";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -30,6 +31,7 @@ export default async function ServiceDetailPage({ params }: Props) {
       <ServiceHero {...service.hero} />
       <ServiceApproach {...service.approach} />
       <ServiceBenefits {...service.benefits} />
+      <ServicePricing {...service.pricing} />
     </main>
   );
 }
