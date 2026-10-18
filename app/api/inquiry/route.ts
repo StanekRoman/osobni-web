@@ -4,55 +4,78 @@ import { sendInquiry } from "../../nezavazne-poptat/lib/send-inquiry";
 
 export const runtime = "nodejs";
 
-const MAX_BODY_SIZE = 16_384;
+const MAX_FILE_SIZE = 5 * 1024 * 1024;
+const MAX_BODY_SIZE = 6 * 1024 * 1024;
+
+const ALLOWED_FILE_TYPES = new Map([
+  ["application/pdf", [".pdf"]],
+  [
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    [".docx"],
+  ],
+  ["image/png", [".png"]],
+  ["image/jpeg", [".jpg", ".jpeg"]],
+]);
+
+function errorResponse(message: string, status: number) {
+  return NextResponse.json({ error: message }, { status });
+}
 
 export async function POST(request: Request) {
   try {
     const contentType = request.headers.get("content-type") ?? "";
 
-    if (!contentType.toLowerCase().startsWith("application/json")) {
-      return NextResponse.json(
-        { error: "Nepodporovaný formát požadavku." },
-        { status: 415 },
-      );
+    if (!contentType.toLowerCase().startsWith("multipart/form-data")) {
+      return errorResponse("Nepodporovaný formát požadavku.", 415);
     }
 
     const contentLength = Number(request.headers.get("content-length") ?? 0);
 
     if (contentLength > MAX_BODY_SIZE) {
-      return NextResponse.json(
-        { error: "Požadavek je příliš velký." },
-        { status: 413 },
-      );
+      return errorResponse("Požadavek je příliš velký.", 413);
     }
 
-    const rawBody = await request.text();
+    const rawBody = await request.arrayBuffer();
 
-    if (Buffer.byteLength(rawBody, "utf8") > MAX_BODY_SIZE) {
-      return NextResponse.json(
-        { error: "Požadavek je příliš velký." },
-        { status: 413 },
-      );
+    if (rawBody.byteLength > MAX_BODY_SIZE) {
+      return errorResponse("Požadavek je příliš velký.", 413);
     }
 
-    let body: unknown;
+    let formData: FormData;
 
     try {
-      body = JSON.parse(rawBody);
+      formData = await new Request(request.url, {
+        method: "POST",
+        headers: {
+          "content-type": contentType,
+        },
+        body: rawBody,
+      }).formData();
     } catch {
-      return NextResponse.json(
-        { error: "Neplatný formát dat." },
-        { status: 400 },
-      );
+      return errorResponse("Neplatný formát dat.", 400);
     }
+
+    const getString = (key: string) => {
+      const value = formData.get(key);
+      return typeof value === "string" ? value : undefined;
+    };
+
+    const body = {
+      name: getString("name"),
+      email: getString("email"),
+      serviceType: getString("serviceType"),
+      message: getString("message"),
+      phone: getString("phone"),
+      budget: getString("budget"),
+      websiteUrl: getString("websiteUrl"),
+      timeframe: getString("timeframe"),
+      website: getString("website"),
+    };
 
     const parsed = inquirySchema.safeParse(body);
 
     if (!parsed.success) {
-      return NextResponse.json(
-        { error: "Zkontrolujte vyplněné údaje." },
-        { status: 400 },
-      );
+      return errorResponse("Zkontrolujte vyplněné údaje.", 400);
     }
 
     const { website, ...inquiry } = parsed.data;
@@ -61,7 +84,39 @@ export async function POST(request: Request) {
       return NextResponse.json({ success: true });
     }
 
-    await sendInquiry(inquiry);
+    const attachmentValue = formData.get("attachment");
+    let attachment:
+      | {
+          filename: string;
+          content: Buffer;
+        }
+      | undefined;
+
+    if (attachmentValue instanceof File && attachmentValue.size > 0) {
+      if (attachmentValue.size > MAX_FILE_SIZE) {
+        return errorResponse("Příloha může mít maximálně 5 MB.", 413);
+      }
+
+      const extension = attachmentValue.name
+        .slice(attachmentValue.name.lastIndexOf("."))
+        .toLowerCase();
+
+      const allowedExtensions = ALLOWED_FILE_TYPES.get(attachmentValue.type);
+
+      if (!allowedExtensions || !allowedExtensions.includes(extension)) {
+        return errorResponse(
+          "Povolené formáty příloh jsou PDF, DOCX, PNG a JPG.",
+          400,
+        );
+      }
+
+      attachment = {
+        filename: attachmentValue.name,
+        content: Buffer.from(await attachmentValue.arrayBuffer()),
+      };
+    }
+
+    await sendInquiry(inquiry, attachment);
 
     return NextResponse.json({ success: true });
   } catch (error) {
@@ -70,9 +125,9 @@ export async function POST(request: Request) {
       error instanceof Error ? error.name : "UnknownError",
     );
 
-    return NextResponse.json(
-      { error: "Poptávku se nepodařilo odeslat. Zkuste to prosím znovu." },
-      { status: 500 },
+    return errorResponse(
+      "Poptávku se nepodařilo odeslat. Zkuste to prosím znovu.",
+      500,
     );
   }
 }
