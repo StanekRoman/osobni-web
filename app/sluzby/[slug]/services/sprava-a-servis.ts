@@ -14,9 +14,9 @@ export const spravaAServis = {
   hero: {
     content: {
       eyebrow: "Správa a servis",
-      heading: "Web nekončí dnem spuštění.",
+      heading: "Správa a servis webu, abyste se mohli věnovat podnikání.",
       description:
-        "Obsah se mění, vznikají nové služby a občas se něco rozbije. Průběžná péče drží web použitelný bez velkého předělávání.",
+        "Postarám se o technické aktualizace, opravy, úpravy obsahu i postupný rozvoj vašeho webu. Nemusíte kvůli každé změně hledat nového dodavatele.",
       cta: {
         label: "Nezávazně poptat",
         href: "/nezavazne-poptat",
@@ -26,16 +26,16 @@ export const spravaAServis = {
       title: "Průběžná péče",
       steps: [
         {
-          title: "Úpravy",
-          description: "Obsahové a drobné funkční změny.",
+          title: "Aktualizace",
+          description: "Technické aktualizace a úpravy obsahu.",
         },
         {
           title: "Opravy",
-          description: "Řešení technických problémů.",
+          description: "Řešení chyb a technických problémů.",
         },
         {
           title: "Rozvoj",
-          description: "Postupné zlepšování podle potřeby.",
+          description: "Nové funkce a vylepšení podle potřeby.",
         },
       ],
     },
@@ -44,30 +44,30 @@ export const spravaAServis = {
   approach: {
     content: {
       eyebrow: "Jak o správě přemýšlím",
-      heading: "Nejdřív potřeba. Potom nejmenší smysluplný zásah.",
+      heading: "Pravidelná péče i jednorázové zásahy podle potřeby.",
       description:
-        "Ne každá změna potřebuje nový projekt. Servis má udržet web funkční a aktuální.",
+        "Ne každý web potřebuje měsíční servis. Podle jeho technického stavu a vašich požadavků navrhnu vhodnou formu spolupráce, od jednotlivých úprav až po dlouhodobou správu.",
     },
     visual: {
       steps: [
         {
-          title: "Podnět",
-          description: "Co se změnilo nebo nefunguje?",
+          title: "Požadavek",
+          description: "Co potřebujete změnit nebo opravit?",
           icon: LuMessageSquare,
         },
         {
-          title: "Dopad",
-          description: "Co je potřeba upravit?",
+          title: "Posouzení",
+          description: "Jaký zásah je potřeba a čeho se dotkne?",
           icon: LuClipboardCheck,
         },
         {
-          title: "Zásah",
-          description: "Jaká je nejmenší vhodná změna?",
+          title: "Realizace",
+          description: "Provedu potřebné úpravy nebo opravy.",
           icon: LuWrench,
         },
         {
           title: "Kontrola",
-          description: "Funguje web po úpravě správně?",
+          description: "Ověřím správné fungování po změně.",
           icon: LuShieldCheck,
         },
       ],
@@ -77,25 +77,28 @@ export const spravaAServis = {
   benefits: {
     content: {
       eyebrow: "Co má řešení přinést",
-      heading: "Menší změny bez zbytečného projektu.",
+      heading: "Aktuální obsah, technická funkčnost a průběžné zlepšování.",
       description:
-        "Servis má držet web aktuální a funkční, ne vytvářet další administrativu.",
+        "Váš web se může měnit spolu s podnikáním. Pomohu vám udržovat jeho obsah, řešit technické problémy a postupně přidávat potřebná vylepšení.",
     },
     visual: {
       items: [
         {
-          title: "Rychlejší změny",
-          description: "Menší úpravy mají kratší cestu k realizaci.",
+          title: "Aktuální web",
+          description:
+            "Informace, nabídka a obsah odpovídají vašemu podnikání.",
           icon: LuDiamond,
         },
         {
-          title: "Kontinuita",
-          description: "Nemusíte pokaždé vysvětlovat web novému člověku.",
+          title: "Technická péče",
+          description:
+            "Aktualizace, opravy a kontrola funkčnosti podle dohodnutého rozsahu.",
           icon: LuArrowUpRight,
         },
         {
           title: "Postupný rozvoj",
-          description: "Web lze zlepšovat podle skutečných potřeb.",
+          description:
+            "Web lze průběžně vylepšovat bez nutnosti kompletního předělání.",
           icon: LuCheck,
         },
       ],
@@ -105,24 +108,26 @@ export const spravaAServis = {
   pricing: {
     content: {
       eyebrow: "Cena a rozsah",
-      heading:
-        "Cena závisí na typu a rozsahu konkrétního zásahu nebo domluvené péče.",
+      heading: "Kolik stojí správa a servis webu?",
       description:
-        "Konkrétní cenu určuje rozsah, obsah, funkce a náročnost realizace. Nejdřív si ujasníme, co má řešení skutečně zvládnout.",
+        "Podle rozsahu lze domluvit jednorázovou úpravu nebo dlouhodobější servis. Předem stanovíme, jaké práce budou zahrnuté, jak se budou účtovat a za jakých podmínek bude spolupráce probíhat.",
     },
     visual: {
       factors: [
         {
-          title: "Rozsah",
-          description: "Kolik stránek, stavů nebo obrazovek řešíme.",
+          title: "Typ spolupráce",
+          description:
+            "Jednorázová úprava, pravidelná údržba nebo dlouhodobý servis.",
         },
         {
-          title: "Funkce",
-          description: "Co má řešení umět nad rámec prezentace.",
+          title: "Rozsah prací",
+          description:
+            "Jaké aktualizace, opravy a další činnosti bude potřeba zajistit.",
         },
         {
-          title: "Obsah",
-          description: "Co je připravené a co je potřeba vytvořit.",
+          title: "Technický stav",
+          description:
+            "Na jaké technologii web funguje a v jakém je aktuálně stavu.",
         },
       ],
     },
@@ -131,27 +136,28 @@ export const spravaAServis = {
   process: {
     content: {
       eyebrow: "Jak probíhá spolupráce",
-      heading: "Přehledný proces od prvního kontextu po výsledek.",
+      heading: "Od požadavku až po hotovou úpravu.",
       description:
-        "Každý krok má svůj důvod. Bez procesního divadla a bez zbytečných mezikroků.",
+        "Popíšete mi problém nebo požadovanou změnu. Posoudím rozsah práce, připravím návrh postupu a po odsouhlasení úpravu provedu a otestuji.",
     },
     visual: {
       steps: [
         {
           title: "Požadavek",
-          description: "Popíšete změnu nebo problém.",
+          description: "Popíšete, co potřebujete změnit nebo opravit.",
         },
         {
           title: "Posouzení",
-          description: "Určím rozsah a návaznosti.",
+          description: "Prověřím technický stav a upřesníme rozsah i cenu.",
         },
         {
-          title: "Úprava",
-          description: "Změnu provedu a ověřím.",
+          title: "Úprava a kontrola",
+          description: "Změnu provedu a ověřím její správné fungování.",
         },
         {
           title: "Další péče",
-          description: "Podle potřeby pokračujeme dalšími úpravami.",
+          description:
+            "Výsledek předám a podle potřeby se domluvíme na další spolupráci.",
         },
       ],
     },
@@ -211,9 +217,10 @@ export const spravaAServis = {
   },
 
   cta: {
-    eyebrow: "Další krok",
-    heading: "Potřebuje web spíš péči než další velký redesign?",
+    eyebrow: "Potřebujete pomoc se svým webem?",
+    heading:
+      "Potřebujete opravit, upravit nebo pravidelně spravovat web? Napište mi.",
     description:
-      "Pošlete mi, co se má změnit, a určíme nejmenší smysluplný zásah.",
+      "Pošlete mi adresu webu a stručně popište, co potřebujete vyřešit. Navrhnu vhodný postup a možnosti spolupráce.",
   },
 } satisfies ServiceDetailData;

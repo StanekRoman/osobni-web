@@ -14,28 +14,29 @@ export const automatizaceANastroje = {
   hero: {
     content: {
       eyebrow: "Automatizace a nástroje",
-      heading: "Když ruční rutina může udělat malý nástroj.",
+      heading: "Automatizujte rutinní úkoly a získejte více času na podnikání.",
       description:
-        "Ne každá automatizace potřebuje velký systém. Často stačí jednoduchý skript nebo propojení, které odstraní opakované přepisování a kontrolu.",
+        "Přepisujete objednávky do tabulek, přenášíte data mezi službami nebo opakujete stejné úkoly každý den? Vytvořím jednoduchý nástroj nebo automatizaci, která část práce udělá za vás.",
       cta: {
         label: "Nezávazně poptat",
         href: "/nezavazne-poptat",
       },
     },
     visual: {
-      title: "Jednoduchý tok",
+      title: "Jak automatizace funguje",
       steps: [
         {
           title: "Vstup",
-          description: "E-mail, formulář nebo soubor.",
+          description: "Data přijdou z e-mailu, formuláře nebo souboru.",
         },
         {
-          title: "Pravidla",
-          description: "Co se má automaticky stát.",
+          title: "Zpracování",
+          description: "Nástroj provede předem nastavené kroky.",
         },
         {
-          title: "Výstup",
-          description: "Tabulka, upozornění nebo jiný výsledek.",
+          title: "Výsledek",
+          description:
+            "Data se zapíší, odešlou nebo vytvoří požadovaný výstup.",
         },
       ],
     },
@@ -44,30 +45,31 @@ export const automatizaceANastroje = {
   approach: {
     content: {
       eyebrow: "Jak o automatizaci přemýšlím",
-      heading: "Nejdřív rutina. Potom automatizace.",
+      heading:
+        "Nejdřív pochopit současný postup. Potom odstranit zbytečnou ruční práci.",
       description:
-        "Automatizovat má smysl stabilní opakovaný krok, ne chaos, který ještě nemá jasná pravidla.",
+        "Společně projdeme, co dnes děláte ručně, které kroky se opakují a jaká pravidla dodržujete. Podle toho navrhnu automatizaci, která vám práci skutečně usnadní.",
     },
     visual: {
       steps: [
         {
           title: "Rutina",
-          description: "Co dnes děláte ručně?",
+          description: "Které úkoly dnes děláte opakovaně?",
           icon: LuRepeat,
         },
         {
           title: "Pravidla",
-          description: "Co se opakuje pokaždé stejně?",
+          description: "Co se pokaždé provádí stejným způsobem?",
           icon: LuListChecks,
         },
         {
           title: "Propojení",
-          description: "Odkud data přicházejí a kam mají jít?",
+          description: "Odkud data přicházejí a kam mají putovat?",
           icon: LuWorkflow,
         },
         {
           title: "Výsledek",
-          description: "Co už člověk nemusí dělat ručně?",
+          description: "Které kroky už nebudete muset dělat ručně?",
           icon: LuCheckCheck,
         },
       ],
@@ -77,25 +79,25 @@ export const automatizaceANastroje = {
   benefits: {
     content: {
       eyebrow: "Co má řešení přinést",
-      heading: "Automatizovat jen to, co dává smysl.",
+      heading: "Úspora času, méně chyb a jednodušší každodenní provoz.",
       description:
-        "Cílem není další software navíc, ale méně ruční práce a menší prostor pro chybu.",
+        "Automatizace má odstranit opakované úkoly, omezit chyby při ručním přepisování a uvolnit vám čas na důležitější práci.",
     },
     visual: {
       items: [
         {
           title: "Méně chyb",
-          description: "Pravidla se provedou pokaždé stejně.",
+          description: "Opakované operace probíhají podle stejných pravidel.",
           icon: LuDiamond,
         },
         {
           title: "Úspora času",
-          description: "Opakovaný krok proběhne bez ručního přepisování.",
+          description: "Rutinní úkoly nemusíte pokaždé provádět ručně.",
           icon: LuArrowUpRight,
         },
         {
-          title: "Jednoduché použití",
-          description: "Nástroj odpovídá tomu, kdo s ním skutečně pracuje.",
+          title: "Jednoduché používání",
+          description: "Nástroj přizpůsobím tomu, jak skutečně pracujete.",
           icon: LuCheck,
         },
       ],
@@ -105,25 +107,25 @@ export const automatizaceANastroje = {
   pricing: {
     content: {
       eyebrow: "Cena a rozsah",
-      heading: "Cena se odvíjí hlavně od počtu zdrojů, pravidel a integrací.",
+      heading: "Kolik stojí automatizace na míru?",
       description:
-        "Nejdřív projdeme současný postup a určíme, co má automatizace zvládnout. Podle náročnosti propojení a zpracování dat pak připravím konkrétní cenovou nabídku.",
+        "Cena závisí na zdrojích dat, složitosti pravidel a počtu služeb, které je potřeba propojit. Zohledníme také případné provozní poplatky a předem odsouhlasíme rozsah realizace.",
     },
     visual: {
       factors: [
         {
           title: "Zdroje dat",
-          description: "Odkud data přicházejí a v jaké podobě je získáváme.",
+          description: "Odkud data získáváme a v jaké podobě jsou dostupná.",
         },
         {
-          title: "Logika",
+          title: "Pravidla a výjimky",
           description:
-            "Jaká pravidla, podmínky a výjimky musí automatizace řešit.",
+            "Jaké podmínky musí automatizace vyhodnocovat a jak má řešit chyby.",
         },
         {
-          title: "Integrace",
+          title: "Propojení služeb",
           description:
-            "Kolik systémů propojujeme a jaké možnosti napojení nabízejí.",
+            "Kolik systémů zapojíme a jaké možnosti integrace nabízejí.",
         },
       ],
     },
@@ -132,27 +134,28 @@ export const automatizaceANastroje = {
   process: {
     content: {
       eyebrow: "Jak probíhá spolupráce",
-      heading: "Přehledný proces od prvního kontextu po výsledek.",
+      heading: "Od opakovaného úkolu k fungující automatizaci.",
       description:
-        "Každý krok má svůj důvod. Bez procesního divadla a bez zbytečných mezikroků.",
+        "Nejprve si ukážeme současný postup, potom navrhnu vhodné zjednodušení, vytvořím potřebný nástroj a společně ověříme jeho fungování.",
     },
     visual: {
       steps: [
         {
-          title: "Rutina",
-          description: "Popíšete, co dnes děláte ručně.",
+          title: "Popis rutiny",
+          description: "Ukážete mi, jak dnes daný úkol provádíte.",
         },
         {
-          title: "Zjednodušení",
-          description: "Najdeme nejmenší automatizovatelný tok.",
+          title: "Návrh automatizace",
+          description: "Určíme, které kroky lze automatizovat a jak.",
         },
         {
-          title: "Nástroj",
-          description: "Vznikne skript, utilita nebo propojení.",
+          title: "Implementace",
+          description: "Vytvořím skript, nástroj nebo propojení služeb.",
         },
         {
-          title: "Předání",
-          description: "Ověříme použití a předám jednoduchý postup.",
+          title: "Testování a předání",
+          description:
+            "Ověříme správné zpracování dat a předám postup používání.",
         },
       ],
     },
@@ -210,9 +213,10 @@ export const automatizaceANastroje = {
   },
 
   cta: {
-    eyebrow: "Další krok",
-    heading: "Který opakovaný úkol vám bere zbytečně čas?",
+    eyebrow: "Chcete si ušetřit práci?",
+    heading:
+      "Který opakovaný úkol vám zabírá nejvíc času? Pojďme ho zjednodušit.",
     description:
-      "Popište současný postup. Nejprve zjistíme, jestli automatizace vůbec dává smysl.",
+      "Popište mi, co dnes děláte ručně. Společně zjistíme, zda a jak se dá tento postup automatizovat.",
   },
 } satisfies ServiceDetailData;

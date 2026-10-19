@@ -14,9 +14,9 @@ export const redesign = {
   hero: {
     content: {
       eyebrow: "Redesign webu",
-      heading: "Starý web nemusí určovat podobu toho nového.",
+      heading: "Proměňte zastaralý web v moderní prezentaci vašeho podnikání.",
       description:
-        "Redesign není přebarvení. Nejdřív zjistíme, co na současném webu funguje, co překáží a co se v podnikání změnilo.",
+        "Pokud váš současný web působí zastarale, je nepřehledný nebo už neodpovídá vaší nabídce, navrhnu jeho novou podobu. S důrazem na vzhled, obsah a snadnou orientaci zákazníků.",
       cta: {
         label: "Nezávazně poptat",
         href: "/nezavazne-poptat",
@@ -27,15 +27,15 @@ export const redesign = {
       steps: [
         {
           title: "Současný stav",
-          description: "Co dnes brzdí pochopení nabídky.",
+          description: "Zjistíme, co na webu funguje a co zákazníkům překáží.",
         },
         {
-          title: "Nová hierarchie",
-          description: "Co má být vidět dřív a jasněji.",
+          title: "Nová struktura",
+          description: "Důležité informace dostanou správné místo.",
         },
         {
-          title: "Nový směr",
-          description: "Vizuál a obsah odpovídají dnešku.",
+          title: "Nová podoba",
+          description: "Moderní design odpovídá vašemu dnešnímu podnikání.",
         },
       ],
     },
@@ -44,30 +44,30 @@ export const redesign = {
   approach: {
     content: {
       eyebrow: "Jak o redesignu přemýšlím",
-      heading: "Nejdřív důvod ke změně. Potom nový vzhled.",
+      heading: "Zachovat, co funguje. Zlepšit, co návštěvníkům překáží.",
       description:
-        "Smyslem redesignu není zahodit vše staré, ale odstranit to, co už nefunguje.",
+        "Redesign není jen změna barev a obrázků. Nejprve projdu současný web, zjistím jeho slabá místa a navrhnu úpravy, které zlepší vzhled i použitelnost.",
     },
     visual: {
       steps: [
         {
-          title: "Audit",
-          description: "Co dnes funguje a co brzdí?",
+          title: "Analýza",
+          description: "Co na současném webu funguje a co je potřeba změnit?",
           icon: LuSearch,
         },
         {
-          title: "Priorita",
-          description: "Co musí návštěvník pochopit dřív?",
+          title: "Priority",
+          description: "Které informace mají návštěvníci najít jako první?",
           icon: LuListTree,
         },
         {
-          title: "Směr",
-          description: "Jak má nový web působit?",
+          title: "Nový design",
+          description: "Jak má web reprezentovat vaše podnikání?",
           icon: LuPalette,
         },
         {
           title: "Přechod",
-          description: "Co zachovat a co postavit znovu?",
+          description: "Co zachováme a co vytvoříme znovu?",
           icon: LuRefreshCw,
         },
       ],
@@ -77,25 +77,27 @@ export const redesign = {
   benefits: {
     content: {
       eyebrow: "Co má řešení přinést",
-      heading: "Změna, která má důvod.",
+      heading:
+        "Modernější vzhled, srozumitelnější nabídka a jednodušší kontakt.",
       description:
-        "Zachováme to, co funguje. Zbytek není potřeba chránit jen proto, že už existuje.",
+        "Nový web má zákazníkům usnadnit orientaci, představit vaše služby a vytvořit lepší první dojem.",
     },
     visual: {
       items: [
         {
-          title: "Lepší hierarchie",
-          description: "Důležité informace dostanou správnou váhu.",
+          title: "Přehlednější obsah",
+          description: "Zákazníci rychleji najdou důležité informace.",
           icon: LuArrowUpRight,
         },
         {
-          title: "Aktuální prezentace",
-          description: "Web odpovídá dnešní nabídce a značce.",
+          title: "Moderní prezentace",
+          description: "Vzhled webu odpovídá současné nabídce a značce.",
           icon: LuDiamond,
         },
         {
-          title: "Čistší cesta ke kontaktu",
-          description: "Návštěvník se neztrácí mezi starými vrstvami.",
+          title: "Snadnější kontakt",
+          description:
+            "Návštěvníci se jednoduše dostanou k poptávce nebo kontaktním údajům.",
           icon: LuCheck,
         },
       ],
@@ -105,24 +107,25 @@ export const redesign = {
   pricing: {
     content: {
       eyebrow: "Cena a rozsah",
-      heading:
-        "Cena redesignu vychází z rozsahu změn, obsahu a toho, co lze ze současného webu zachovat.",
+      heading: "Kolik stojí redesign webu?",
       description:
-        "Konkrétní cenu určuje rozsah, obsah, funkce a náročnost realizace. Nejdřív si ujasníme, co má řešení skutečně zvládnout.",
+        "Cena závisí na stavu původního webu, rozsahu požadovaných změn a množství obsahu, který bude potřeba upravit nebo převést. Po posouzení současného webu připravím konkrétní nabídku.",
     },
     visual: {
       factors: [
         {
-          title: "Rozsah",
-          description: "Kolik stránek, stavů nebo obrazovek řešíme.",
+          title: "Současný stav",
+          description: "Jak je web postavený a které části lze zachovat.",
         },
         {
-          title: "Funkce",
-          description: "Co má řešení umět nad rámec prezentace.",
+          title: "Rozsah změn",
+          description:
+            "Kolik stránek, funkcí a designových prvků budeme upravovat.",
         },
         {
-          title: "Obsah",
-          description: "Co je připravené a co je potřeba vytvořit.",
+          title: "Obsah a migrace",
+          description:
+            "Jaké texty, fotografie a data je potřeba převést nebo vytvořit znovu.",
         },
       ],
     },
@@ -131,27 +134,29 @@ export const redesign = {
   process: {
     content: {
       eyebrow: "Jak probíhá spolupráce",
-      heading: "Přehledný proces od prvního kontextu po výsledek.",
+      heading: "Od analýzy současného webu po spuštění nové verze.",
       description:
-        "Každý krok má svůj důvod. Bez procesního divadla a bez zbytečných mezikroků.",
+        "Nejdřív zjistím, co potřebuje změnit. Potom připravím novou strukturu a design, web zrealizuji a postarám se o přechod na novou verzi.",
     },
     visual: {
       steps: [
         {
-          title: "Audit",
-          description: "Projdu současný web a jeho slabá místa.",
+          title: "Analýza současného webu",
+          description: "Projdu obsah, vzhled, funkce a technický stav webu.",
         },
         {
           title: "Nová struktura",
-          description: "Určíme, co zachovat, přeskládat nebo odstranit.",
+          description: "Určíme, co zachovat, upravit nebo odstranit.",
         },
         {
-          title: "Nový návrh",
-          description: "Vznikne nový vizuální a obsahový směr.",
+          title: "Design a realizace",
+          description:
+            "Připravím nový vizuální návrh a po schválení web vytvořím.",
         },
         {
-          title: "Přechod",
-          description: "Relevantní obsah převedeme a nový web spustíme.",
+          title: "Spuštění",
+          description:
+            "Převedu potřebný obsah, ověřím funkčnost a nastavím případná přesměrování.",
         },
       ],
     },
@@ -209,8 +214,9 @@ export const redesign = {
   },
 
   cta: {
-    eyebrow: "Další krok",
-    heading: "Současný web už vás nevystihuje?",
-    description: "Podíváme se, co má smysl zachovat a co postavit znovu.",
+    eyebrow: "Chcete vylepšit současný web?",
+    heading: "Podíváme se, co vašemu současnému webu chybí a jak ho vylepšit.",
+    description:
+      "Pošlete mi adresu svého webu a stručně popište, co vám na něm nevyhovuje. Společně probereme možnosti redesignu.",
   },
 } satisfies ServiceDetailData;
