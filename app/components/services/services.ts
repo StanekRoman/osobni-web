@@ -2,28 +2,28 @@ export const secondaryServices = [
   {
     title: "Webové aplikace",
     description:
-      "Rozhraní a nástroje, které řeší konkrétní proces místo pouhé prezentace.",
+      "Interní systémy, zákaznické portály a další aplikace vytvořené podle potřeb vašeho podnikání.",
     icon: "app" as const,
     href: "/sluzby/webove-aplikace",
   },
   {
     title: "Automatizace a nástroje",
     description:
-      "Propojení služeb a malé utility, které omezí ruční opakovanou práci.",
+      "Propojím používané služby a automatizuji opakované úkoly, abyste nemuseli zbytečně přepisovat data.",
     icon: "automation" as const,
     href: "/sluzby/automatizace-a-nastroje",
   },
   {
     title: "Redesign webu",
     description:
-      "Nová struktura a vizuální směr pro web, který už neodpovídá vašemu podnikání.",
+      "Zastaralý nebo nepřehledný web proměním v moderní prezentaci, která lépe osloví vaše zákazníky.",
     icon: "redesign" as const,
     href: "/sluzby/redesign-webu",
   },
   {
-    title: "Správa a další rozvoj",
+    title: "Správa a servis",
     description:
-      "Technická péče, obsahové změny a postupné rozšiřování bez stavby od nuly.",
+      "Postarám se o aktualizace, technický provoz, úpravy obsahu i další rozvoj vašeho webu.",
     icon: "maintenance" as const,
     href: "/sluzby/sprava-a-servis",
   },

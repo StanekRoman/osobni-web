@@ -63,8 +63,8 @@ export default function PrimaryServiceCard() {
         lineHeight={{ base: "24px", xl: "26px" }}
         color="textSubtle"
       >
-        Pro podnikání, které potřebuje první kvalitní prezentaci nebo nový
-        základ odpovídající současným službám.
+        Vytvořím vám moderní a přehledný web, který profesionálně představí vaše
+        služby, vzbudí důvěru a usnadní zákazníkům kontakt.
       </Text>
 
       <Flex

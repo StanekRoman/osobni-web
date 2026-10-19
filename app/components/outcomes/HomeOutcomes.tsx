@@ -48,7 +48,7 @@ export default function HomeOutcomes() {
 
             <Text
               as="h2"
-              width={{ base: "100%", xl: "820px" }}
+              width="100%"
               maxWidth="100%"
               fontFamily="editorial"
               fontSize={{
@@ -64,9 +64,9 @@ export default function HomeOutcomes() {
               fontWeight="600"
               color="textPrimary"
             >
-              Tři věci, které rozhodují dřív než{" "}
-              <Box as="br" display={{ base: "none", xl: "block" }} />
-              efektní animace.
+              Dobrý web nestačí jen vidět.
+              <br />
+              Musí přesvědčit a usnadnit kontakt.
             </Text>
           </Flex>
 

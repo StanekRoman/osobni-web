@@ -62,6 +62,7 @@ export default function ProcessCard({ step }: ProcessCardProps) {
         fontSize="14px"
         lineHeight="22px"
         fontWeight="400"
+        maxW={{ base: "100%", xl: "75%" }}
         color="textSubtle"
       >
         {step.description}

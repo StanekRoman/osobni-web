@@ -54,7 +54,7 @@ export default function HomeProcess() {
                 fontWeight="600"
                 color="textPrimary"
               >
-                Jeden plynulý proces. Každý krok navazuje na předchozí.
+                Od prvního rozhovoru až po spuštění webu.
               </Heading>
             </Flex>
 
@@ -64,8 +64,8 @@ export default function HomeProcess() {
               lineHeight="25px"
               color="textSubtle"
             >
-              Žádné předávání mezi pěti lidmi. Víte, kde projekt je, co řešíme a
-              co následuje.
+              Celým projektem vás provedu osobně. Budete vědět, na čem pracuji,
+              co následuje a kdy se můžete těšit na výsledek.
             </Text>
           </Flex>
 

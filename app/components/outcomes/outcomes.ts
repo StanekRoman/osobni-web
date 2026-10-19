@@ -1,8 +1,8 @@
 export const outcomes = [
   {
-    title: "Vysvětlit nabídku",
+    title: "Jasně představit nabídku",
     description:
-      "Služby, přínosy a další krok musí být jasné i člověku, který vás vidí poprvé.",
+      "Návštěvník rychle zjistí, co nabízíte, komu pomáháte a proč se obrátit právě na vás.",
     accent: "accentLight",
     left: "89px",
     top: "-38px",
@@ -11,9 +11,9 @@ export const outcomes = [
     zIndex: 1,
   },
   {
-    title: "Podpořit důvěru",
+    title: "Vzbudit důvěru",
     description:
-      "Vizuál, obsah a ukázky práce mají společně potvrdit, že návštěvník jedná s profesionálem.",
+      "Profesionální vzhled, srozumitelný obsah a ukázky práce pomohou zákazníkovi rozhodnout se.",
     accent: "blue",
     left: "432px",
     top: "23px",
@@ -22,9 +22,9 @@ export const outcomes = [
     zIndex: 2,
   },
   {
-    title: "Usnadnit kontakt",
+    title: "Proměnit zájem v poptávku",
     description:
-      "Poptávka nemá být hledání. Web návštěvníka přirozeně dovede k jednoduchému spojení.",
+      "Jasné výzvy k akci a jednoduchý kontakt usnadní návštěvníkovi udělat další krok.",
     accent: "green",
     left: "775px",
     top: "84px",

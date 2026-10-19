@@ -27,7 +27,7 @@ export default function AutomationWorkflow() {
         fontWeight="600"
         color="textPrimary"
       >
-        Méně ručního přepisování. Více času na práci.
+        Od příchozí zprávy k hotovému úkolu. Automaticky.
       </Text>
 
       {/* Vstup a automatické zpracování */}
@@ -167,8 +167,8 @@ export default function AutomationWorkflow() {
         />
 
         <Text fontSize="12px" lineHeight="17px" color="textSubtle">
-          Konkrétní řešení se skládá podle procesu, ne podle předem daného
-          balíčku.
+          Automatizace se přizpůsobí vašemu postupu a nástrojům, které už
+          používáte.
         </Text>
       </Flex>
     </Flex>
