@@ -1,9 +1,9 @@
-import HomeAutomation from "@/components/home/automation/HomeAutomation";
-import HomeCTA from "@/components/home/cta/HomeCTA";
-import HomeHero from "@/components/home/hero/HomeHero";
-import HomeOutcomes from "@/components/home/outcomes/HomeOutcomes";
-import HomeProcess from "@/components/home/process/HomeProcess";
-import HomeServices from "@/components/home/services/HomeServices";
+import HomeAutomation from "@/app/components/automation/HomeAutomation";
+import HomeCTA from "@/app/components/cta/HomeCTA";
+import HomeHero from "@/app/components/hero/HomeHero";
+import HomeOutcomes from "@/app/components/outcomes/HomeOutcomes";
+import HomeProcess from "@/app/components/process/HomeProcess";
+import HomeServices from "@/app/components/services/HomeServices";
 
 export default function Home() {
   return (
