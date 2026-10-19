@@ -73,7 +73,8 @@ export function InquiryForm() {
               fontSize={{ base: "16px", xl: "18px" }}
               lineHeight={{ base: "26px", xl: "29px" }}
             >
-              Povinná jsou jen čtyři pole.
+              Vyplňte základní informace o projektu. Povinná jsou pouze čtyři
+              pole, ostatní můžete doplnit podle potřeby.
             </Text>
           </Flex>
 
