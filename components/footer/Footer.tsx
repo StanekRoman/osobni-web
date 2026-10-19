@@ -58,14 +58,7 @@ export default function Footer() {
           borderTopWidth="1px"
           borderColor="surfaceDarkSecondary"
         >
-          <Flex
-            direction="row"
-            align="center"
-            justify="center"
-            width={{ base: "100%", md: "auto" }}
-            gap="lg"
-          >
-            <FooterLink href="/obchodni-podminky">Obchodní podmínky</FooterLink>
+          <Flex direction="row" align="center" justify="center" gap="lg">
             <FooterLink href="/ochrana-osobnich-udaju">
               Ochrana osobních údajů
             </FooterLink>

@@ -39,10 +39,10 @@ export const services: Service[] = [
     borderColor: "accentLight",
   },
   {
-    id: "redesigny",
-    title: "Redesigny",
+    id: "redesign-webu",
+    title: "Redesign webu",
     description: "Nový směr pro web, který už neodpovídá dnešnímu podnikání",
-    href: "/sluzby/redesigny",
+    href: "/sluzby/redesign-webu",
     icon: LuRotateCw,
     background: "background",
     iconBackground: "accentLight",

@@ -18,7 +18,7 @@ export const navigation = [
         href: "/sluzby/tvorba-webu",
       },
       {
-        label: "Webové apliakce",
+        label: "Webové aplikace",
         href: "/sluzby/webove-aplikace",
       },
       {
