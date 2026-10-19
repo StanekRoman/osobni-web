@@ -1,4 +1,79 @@
-import { createSystem, defaultConfig, defineConfig } from "@chakra-ui/react";
+import {
+  createSystem,
+  defaultConfig,
+  defineConfig,
+  defineRecipe,
+  defineSlotRecipe,
+} from "@chakra-ui/react";
+
+const inputRecipe = defineRecipe({
+  base: {
+    bg: "background",
+    borderColor: "border",
+    borderRadius: "10px",
+    height: "52px",
+    px: "16px",
+    fontSize: "16px",
+    color: "textPrimary",
+    _placeholder: { color: "textSubtle" },
+    _focusVisible: {
+      borderColor: "accent",
+      outline: "none",
+    },
+  },
+});
+
+const textareaRecipe = defineRecipe({
+  base: {
+    bg: "background",
+    borderColor: "border",
+    borderRadius: "10px",
+    p: "16px",
+    fontSize: "16px",
+    color: "textPrimary",
+    _placeholder: { color: "textSubtle" },
+    _focusVisible: {
+      borderColor: "accent",
+      outline: "none",
+    },
+  },
+});
+
+const nativeSelectRecipe = defineSlotRecipe({
+  slots: ["root", "field", "indicator"],
+  base: {
+    field: {
+      bg: "background",
+      borderColor: "border",
+      borderRadius: "10px",
+      height: "52px",
+      px: "16px",
+      fontSize: "16px",
+      color: "textPrimary",
+      _focusVisible: {
+        borderColor: "accent",
+        outline: "none",
+      },
+    },
+  },
+});
+
+const fieldRecipe = defineSlotRecipe({
+  slots: ["root", "label", "requiredIndicator", "helperText", "errorText"],
+  base: {
+    label: {
+      color: "textPrimary",
+      fontSize: "15px",
+      fontWeight: "600",
+      mb: "8px",
+    },
+    errorText: {
+      fontSize: "13px",
+      color: "red.600",
+      mt: "6px",
+    },
+  },
+});
 
 const config = defineConfig({
   theme: {
@@ -76,7 +151,6 @@ const config = defineConfig({
           lineHeight: "28px",
         },
       },
-
       body: {
         value: {
           fontFamily: "{fonts.body}",
@@ -85,7 +159,6 @@ const config = defineConfig({
           lineHeight: "27px",
         },
       },
-
       bodyMedium: {
         value: {
           fontFamily: "{fonts.body}",
@@ -94,7 +167,6 @@ const config = defineConfig({
           lineHeight: "25px",
         },
       },
-
       bodySmall: {
         value: {
           fontFamily: "{fonts.body}",
@@ -103,7 +175,6 @@ const config = defineConfig({
           lineHeight: "22px",
         },
       },
-
       eyebrow: {
         value: {
           fontFamily: "{fonts.body}",
@@ -114,7 +185,6 @@ const config = defineConfig({
           textTransform: "uppercase",
         },
       },
-
       eyebrowSmall: {
         value: {
           fontFamily: "{fonts.body}",
@@ -125,7 +195,6 @@ const config = defineConfig({
           textTransform: "uppercase",
         },
       },
-
       button: {
         value: {
           fontFamily: "{fonts.body}",
@@ -134,7 +203,6 @@ const config = defineConfig({
           lineHeight: "15px",
         },
       },
-
       nav: {
         value: {
           fontFamily: "{fonts.body}",
@@ -143,7 +211,6 @@ const config = defineConfig({
           lineHeight: "12px",
         },
       },
-
       label: {
         value: {
           fontFamily: "{fonts.body}",
@@ -153,6 +220,16 @@ const config = defineConfig({
           letterSpacing: "0.3px",
         },
       },
+    },
+
+    recipes: {
+      input: inputRecipe,
+      textarea: textareaRecipe,
+    },
+
+    slotRecipes: {
+      nativeSelect: nativeSelectRecipe,
+      field: fieldRecipe,
     },
   },
 });
