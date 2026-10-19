@@ -4,17 +4,17 @@ import { LuArrowUpRight, LuCode, LuWorkflow } from "react-icons/lu";
 const areas = [
   {
     title: "Weby",
-    description: "Struktura, design a frontend.",
+    description: "Moderní webové stránky pro prezentaci vašeho podnikání.",
     icon: LuArrowUpRight,
   },
   {
     title: "Aplikace",
-    description: "Rozhraní a praktické nástroje.",
+    description: "Webové aplikace a nástroje podle vašich potřeb.",
     icon: LuCode,
   },
   {
     title: "Automatizace",
-    description: "Méně ruční opakované práce.",
+    description: "Méně rutinní práce díky automatizaci opakovaných úkolů.",
     icon: LuWorkflow,
   },
 ];
@@ -49,7 +49,7 @@ export default function AboutHeroVisual() {
         fontWeight="600"
         mb={{ base: "24px", md: "28px" }}
       >
-        Jedna odpovědnost.
+        S čím vám mohu pomoci
       </Heading>
 
       <Flex direction="column" gap="12px">

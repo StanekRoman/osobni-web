@@ -1,11 +1,11 @@
 import CTASection from "@/components/shared/CTASection";
 
-export default function ServiceCta() {
+export default function AboutCta() {
   return (
     <CTASection
-      eyebrow="Další krok"
-      heading="Má vám sedět výsledek i způsob spolupráce?"
-      description="Napište mi pár vět o tom, co řešíte. Uvidíme, jestli dává smysl pokračovat společně."
+      eyebrow="Pojďme spolupracovat"
+      heading="Hledáte někoho, kdo se postará o váš web od návrhu po spuštění?"
+      description="Napište mi, co plánujete nebo s čím potřebujete pomoci. Probereme možnosti spolupráce a domluvíme se na dalším postupu."
     />
   );
 }

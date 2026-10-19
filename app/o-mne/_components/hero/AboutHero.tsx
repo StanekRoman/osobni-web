@@ -55,9 +55,10 @@ export default function AboutHero() {
               color="textSubtle"
               maxWidth="550px"
             >
-              Projekt se mnou neputuje mezi designérem, vývojářem a někým, kdo
-              vám pak vysvětluje, co se vlastně děje. Návrh i technickou
-              realizaci řeším přímo a v jednom kontextu.
+              Programovat jsem začal před pěti lety z obyčejné zvědavosti, co
+              všechno se dá vytvořit. Ta zvědavost mě drží dodnes. Baví mě
+              hledat nové možnosti, řešit problémy a každý den se učit něco
+              nového.
             </Text>
 
             <Flex
@@ -74,7 +75,7 @@ export default function AboutHero() {
               _hover={{ bg: "accentDark" }}
             >
               <Link href="/kontakt">
-                Kontakt
+                Napište mi
                 <LuArrowRight />
               </Link>
             </Flex>
