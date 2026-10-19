@@ -8,6 +8,11 @@ import ServicePricing from "./_components/pricing/ServicePricing";
 import ServiceProcess from "./_components/process/ServiceProcess";
 import ServiceFaq from "./_components/faq/ServiceFaq";
 import ServiceCta from "./_components/cta/ServiceCta";
+import type { Metadata } from "next";
+
+import { createMetadata } from "@/lib/seo";
+import { seoData } from "@/lib/seo-data";
+import type { ServiceSlug } from "./service-details";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -19,6 +24,18 @@ export function generateStaticParams() {
   return Object.keys(serviceDetails).map((slug) => ({
     slug,
   }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+
+  const service = getServiceDetail(slug);
+
+  if (!service) {
+    notFound();
+  }
+
+  return createMetadata(seoData.serviceDetails[slug as ServiceSlug]);
 }
 
 export default async function ServiceDetailPage({ params }: Props) {

@@ -4,6 +4,10 @@ import HomeHero from "@/app/components/hero/HomeHero";
 import HomeOutcomes from "@/app/components/outcomes/HomeOutcomes";
 import HomeProcess from "@/app/components/process/HomeProcess";
 import HomeServices from "@/app/components/services/HomeServices";
+import { createMetadata } from "@/lib/seo";
+import { seoData } from "@/lib/seo-data";
+
+export const metadata = createMetadata(seoData.home);
 
 export default function Home() {
   return (

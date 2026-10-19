@@ -1,12 +1,13 @@
-import type { Metadata } from "next";
-
 import PrivacyPolicy from "./_components/PrivacyPolicy";
 
-export const metadata: Metadata = {
-  title: "Ochrana osobních údajů | Roman Staněk",
+import { createMetadata } from "@/lib/seo";
+
+export const metadata = createMetadata({
+  title: "Ochrana osobních údajů",
   description:
     "Informace o zpracování osobních údajů při používání webu a odesílání nezávazných poptávek.",
-};
+  path: "/ochrana-osobnich-udaju",
+});
 
 export default function PrivacyPolicyPage() {
   return (
