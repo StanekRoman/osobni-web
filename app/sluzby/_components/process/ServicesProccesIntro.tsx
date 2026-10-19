@@ -27,7 +27,7 @@ export default function ServicesProcessIntro() {
         fontWeight="600"
         color="textPrimary"
       >
-        Přehledný proces od prvního kontextu po výsledek
+        Od prvního rozhovoru po hotové řešení.
       </Text>
 
       <Text
@@ -36,8 +36,8 @@ export default function ServicesProcessIntro() {
         lineHeight="24px"
         color="textSubtle"
       >
-        Každý krok má svůj důvod, bez procesního divadla a bez zbytečných
-        mezikroků
+        Probereme vaše potřeby, připravím návrh a po jeho schválení se pustím do
+        realizace. V každé fázi budete vědět, co se právě děje.
       </Text>
     </Flex>
   );

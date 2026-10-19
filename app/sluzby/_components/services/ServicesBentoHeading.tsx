@@ -27,7 +27,7 @@ export default function ServicesBentoHeading() {
         fontWeight="600"
         color="textPrimary"
       >
-        Od webu po praktický nástroj
+        Služby, které pomáhají <br /> vašemu podnikání růst.
       </Text>
 
       <Text
@@ -36,8 +36,8 @@ export default function ServicesBentoHeading() {
         lineHeight="25px"
         color="textSubtle"
       >
-        Každá služba má vlastní roli, podle projektu se mohou přirozeně
-        kombinovat
+        Ať potřebujete nový web, modernizovat ten současný nebo ušetřit čas
+        automatizací, společně najdeme vhodné řešení.
       </Text>
     </Flex>
   );

@@ -3,9 +3,9 @@ import CTASection from "@/components/shared/CTASection";
 export default function ServicesCTA() {
   return (
     <CTASection
-      eyebrow="Další krok"
-      heading="Pojďme zjistit, co má váš projekt skutečně vyřešit"
-      description="Krátce projdeme situaci a navrhnu další smysluplný krok"
+      eyebrow="Máte projekt, se kterým potřebujete pomoci?"
+      heading="Napište mi, co potřebujete. Společně najdeme cestu k realizaci."
+      description="Nemusíte mít připravené technické zadání. Stačí stručně popsat svůj nápad nebo problém a probereme možnosti spolupráce."
     />
   );
 }

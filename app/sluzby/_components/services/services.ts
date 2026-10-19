@@ -19,7 +19,8 @@ export const services: Service[] = [
   {
     id: "tvorba-webu",
     title: "Tvorba webů",
-    description: "Nový web od struktury a obsahu po technickou realizaci",
+    description:
+      "Moderní a přehledné weby, které profesionálně představí vaše služby a usnadní zákazníkům kontakt.",
     href: "/sluzby/tvorba-webu",
     iconLabel: "W",
     background: "surfaceDark",
@@ -31,7 +32,8 @@ export const services: Service[] = [
   {
     id: "webove-aplikace",
     title: "Webové aplikace",
-    description: "Když prezentace nestačí a řešení potřebuje vlastní logiku",
+    description:
+      "Interní systémy, zákaznické portály a aplikace vytvořené pro konkrétní potřeby vašeho podnikání.",
     href: "/sluzby/webove-aplikace",
     icon: LuArrowUpRight,
     background: "accentSurface",
@@ -41,7 +43,8 @@ export const services: Service[] = [
   {
     id: "redesign-webu",
     title: "Redesign webu",
-    description: "Nový směr pro web, který už neodpovídá dnešnímu podnikání",
+    description:
+      "Proměním zastaralý nebo nepřehledný web v moderní prezentaci, která lépe osloví vaše zákazníky.",
     href: "/sluzby/redesign-webu",
     icon: LuRotateCw,
     background: "background",
@@ -51,7 +54,8 @@ export const services: Service[] = [
   {
     id: "sprava-a-servis",
     title: "Správa a servis",
-    description: "Průběžné úpravy, opravy a další rozvoj",
+    description:
+      "Aktualizace, opravy, úpravy obsahu a další rozvoj, aby váš web zůstával funkční a aktuální.",
     href: "/sluzby/sprava-a-servis",
     icon: LuPlus,
     background: "surfacePrimary",
@@ -61,7 +65,8 @@ export const services: Service[] = [
   {
     id: "automatizace-a-nastroje",
     title: "Automatizace a nástroje",
-    description: "Méně ruční opakované práce díky jednoduchému nástroji",
+    description:
+      "Propojení služeb a automatizace opakovaných úkolů, které vám ušetří čas při každodenní práci.",
     href: "/sluzby/automatizace-a-nastroje",
     icon: LuZap,
     background: "accentSurface",
