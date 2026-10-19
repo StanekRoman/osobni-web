@@ -66,7 +66,7 @@ export default function ContactMethods() {
         </Flex>
 
         <Text color="textSubtle" fontSize="16px">
-          Raději si o projektu promluvíte? Zavolejte mi.
+          Chcete svůj projekt probrat rovnou? Zavolejte mi.
         </Text>
 
         <Link

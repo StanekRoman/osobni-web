@@ -21,7 +21,7 @@ export default function ContactInquiry() {
               fontWeight="700"
               letterSpacing="1.2px"
             >
-              Máte už konkrétnější představu?
+              Máte konkrétní projekt?
             </Text>
 
             <Heading
@@ -36,7 +36,7 @@ export default function ContactInquiry() {
               lineHeight="1.12"
               color="textPrimary"
             >
-              Pošlete pár vět předem.
+              Popište mi svůj projekt. Společně najdeme vhodný postup.
             </Heading>
 
             <Text
@@ -45,8 +45,9 @@ export default function ContactInquiry() {
               lineHeight={{ base: "26px", md: "27px" }}
               color="textSubtle"
             >
-              Nemusíte připravovat specifikaci. Stačí stručně popsat, co
-              potřebujete vyřešit.
+              Nemusíte mít připravené podrobné zadání. Stačí stručně popsat, co
+              plánujete nebo potřebujete vyřešit. Ozvu se vám a probereme další
+              možnosti.
             </Text>
           </Flex>
 
