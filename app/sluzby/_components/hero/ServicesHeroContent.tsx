@@ -44,7 +44,7 @@ export default function ServicesHeroContent() {
         }}
         color="textPrimary"
       >
-        Nejdřív problém, potom správné řešení
+        Weby, aplikace <br /> a automatizace <br /> pro vaše podnikání.
       </Text>
 
       <Text
@@ -55,8 +55,9 @@ export default function ServicesHeroContent() {
         fontWeight="400"
         color="textSubtle"
       >
-        Konkrétní řešení skládám podle toho, co má projekt skutečně vyřešit, ne
-        podle předem připraveného balíčku
+        Od moderního firemního webu přes webovou aplikaci až po automatizaci
+        každodenních úkolů. Navrhnu a vytvořím řešení podle toho, co skutečně
+        potřebujete.
       </Text>
 
       <ChakraLink
@@ -77,7 +78,7 @@ export default function ServicesHeroContent() {
         _hover={{ bg: "accentDark" }}
       >
         <Link href="/nezavazne-poptat">
-          Popsat, co potřebujete
+          Nezávazně poptat
           <LuArrowRight size={17} strokeWidth={2} />
         </Link>
       </ChakraLink>

@@ -8,7 +8,7 @@ export const footerServices = [
     href: "/sluzby/webove-aplikace",
   },
   {
-    label: "Redesigny",
+    label: "Redesign webu",
     href: "/sluzby/redesign-webu",
   },
   {

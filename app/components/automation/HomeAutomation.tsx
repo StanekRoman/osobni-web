@@ -36,7 +36,7 @@ export default function HomeAutomation() {
               letterSpacing="1.3px"
               color="accent"
             >
-              Když samotný web nestačí
+              Automatizace a interní nástroje
             </Text>
 
             <Heading
@@ -47,7 +47,8 @@ export default function HomeAutomation() {
               fontWeight="600"
               color="textPrimary"
             >
-              Některé věci je lepší zjednodušit než dál dělat ručně.
+              Méně rutinní práce. <br />
+              Více času na podnikání.
             </Heading>
 
             <Text
@@ -56,9 +57,9 @@ export default function HomeAutomation() {
               lineHeight="26px"
               color="textSubtle"
             >
-              Vedle webů můžu navrhnout i jednoduchou webovou aplikaci, interní
-              nástroj nebo automatizaci, která propojí kroky, mezi kterými dnes
-              přepisujete data ručně.
+              Přepisujete objednávky z e-mailů do tabulek? Přenášíte údaje mezi
+              systémy nebo opakujete stejné úkoly každý den? Navrhnu jednoduchý
+              nástroj nebo automatizaci, která část práce udělá za vás.
             </Text>
 
             <Link
@@ -86,7 +87,7 @@ export default function HomeAutomation() {
               }}
             >
               <NextLink href="/sluzby/automatizace-a-nastroje">
-                Automatizace a nástroje
+                Prozkoumat automatizace
                 <HiArrowRight
                   size={17}
                   color="var(--chakra-colors-accent)"

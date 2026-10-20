@@ -6,23 +6,25 @@ export interface ProcessStep {
 
 export const processSteps: ProcessStep[] = [
   {
-    id: "cil-a-kontext",
-    title: "Cíl a kontext",
-    description: "Ujasníme, co má řešení změnit",
+    id: "seznameni-a-cile",
+    title: "Seznámení a cíle",
+    description: "Probereme vaše podnikání, požadavky a očekávaný výsledek.",
   },
   {
-    id: "smer",
-    title: "Směr",
-    description: "Vybereme nejvhodnější rozsah a podobu",
+    id: "navrh-reseni",
+    title: "Návrh řešení",
+    description: "Připravím vhodný rozsah, strukturu a postup realizace.",
   },
   {
-    id: "realizace",
-    title: "Realizace",
-    description: "Návrh převedu do funkčního řešení",
+    id: "vyvoj-a-testovani",
+    title: "Vývoj a testování",
+    description:
+      "Vytvořím funkční řešení, otestuji ho a připravím ke spuštění.",
   },
   {
-    id: "dalsi-pece",
-    title: "Další péče",
-    description: "Po spuštění lze pokračovat správou a rozvojem",
+    id: "spusteni-a-pece",
+    title: "Spuštění a péče",
+    description:
+      "Projekt spustím a podle potřeby zajistím další správu a rozvoj.",
   },
 ];

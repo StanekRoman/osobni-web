@@ -14,9 +14,10 @@ export const tvorbaWebu = {
   hero: {
     content: {
       eyebrow: "Tvorba webů",
-      heading: "Nový web jako pevný základ vašeho podnikání.",
+      heading:
+        "Moderní web, který představí vaše služby a pomůže získávat zákazníky.",
       description:
-        "Pro živnostníky a malé firmy, které potřebují srozumitelnou prezentaci, důvěru a jednoduchou cestu ke kontaktu.",
+        "Vytvořím vám přehledný, rychlý a profesionální web na míru. Zákazníci snadno zjistí, co nabízíte, proč si vybrat právě vás a jak vás kontaktovat.",
       cta: {
         label: "Nezávazně poptat",
         href: "/nezavazne-poptat",
@@ -44,9 +45,9 @@ export const tvorbaWebu = {
   approach: {
     content: {
       eyebrow: "Jak o webu přemýšlím",
-      heading: "Nejdřív cesta návštěvníka. Potom obrazovky.",
+      heading: "Od první návštěvy až po odeslání poptávky.",
       description:
-        "Web má návštěvníka dovést od prvního dojmu k pochopení nabídky a dalšímu kroku.",
+        "Navrhnu strukturu a obsah tak, aby návštěvník rychle pochopil vaši nabídku, získal důvěru a snadno vás kontaktoval.",
     },
     visual: {
       steps: [
@@ -77,8 +78,9 @@ export const tvorbaWebu = {
   benefits: {
     content: {
       eyebrow: "Co má řešení přinést",
-      heading: "Web, který návštěvníka vede.",
-      description: "Výsledek má fungovat obchodně i technicky.",
+      heading: "Profesionální prezentace, jasná nabídka a snadný kontakt.",
+      description:
+        "Web, který zákazníkům usnadní rozhodování a vám získávání nových poptávek.",
     },
     visual: {
       items: [
@@ -104,24 +106,26 @@ export const tvorbaWebu = {
   pricing: {
     content: {
       eyebrow: "Cena a rozsah",
-      heading:
-        "Cena vychází ze skutečného rozsahu webu, funkcí a náročnosti realizace.",
+      heading: "Kolik stojí nový web na míru?",
       description:
-        "Konkrétní cenu určuje rozsah, obsah, funkce a náročnost realizace. Nejdřív si ujasníme, co má řešení skutečně zvládnout.",
+        "Cena webu závisí na počtu stránek, požadovaných funkcích a připravenosti obsahu. Před zahájením dostanete konkrétní nabídku s odsouhlaseným rozsahem.",
     },
     visual: {
       factors: [
         {
-          title: "Rozsah",
-          description: "Kolik stránek, stavů nebo obrazovek řešíme.",
+          title: "Počet stránek",
+          description:
+            "Kolik podstránek a obsahových částí bude web potřebovat.",
         },
         {
-          title: "Funkce",
-          description: "Co má řešení umět nad rámec prezentace.",
+          title: "Požadované funkce",
+          description:
+            "Formuláře, galerie nebo další funkce nad rámec základní prezentace.",
         },
         {
-          title: "Obsah",
-          description: "Co je připravené a co je potřeba vytvořit.",
+          title: "Příprava obsahu",
+          description:
+            "Jaké texty, fotografie a další podklady už máte k dispozici.",
         },
       ],
     },
@@ -130,27 +134,29 @@ export const tvorbaWebu = {
   process: {
     content: {
       eyebrow: "Jak probíhá spolupráce",
-      heading: "Přehledný proces od prvního kontextu po výsledek.",
+      heading: "Od prvního rozhovoru až po spuštění webu.",
       description:
-        "Každý krok má svůj důvod. Bez procesního divadla a bez zbytečných mezikroků.",
+        "Nejdřív poznám vaše podnikání, potom připravím návrh, web vytvořím, otestuji a spustím.",
     },
     visual: {
       steps: [
         {
-          title: "Cíl a kontext",
-          description: "Projdeme nabídku, zákazníky a roli webu.",
+          title: "Seznámení",
+          description: "Probereme vaše podnikání, zákazníky a cíle webu.",
         },
         {
-          title: "Struktura a směr",
-          description: "Vznikne logika obsahu a vizuální směr.",
+          title: "Struktura a design",
+          description:
+            "Připravím strukturu obsahu a vizuální návrh ke schválení.",
         },
         {
-          title: "Realizace",
-          description: "Web technicky postavím a otestuji.",
+          title: "Vývoj a testování",
+          description:
+            "Schválený návrh převedu do funkčního webu a ověřím jeho fungování.",
         },
         {
           title: "Spuštění",
-          description: "Nasazení a případná další péče.",
+          description: "Web nasadím a podle potřeby zajistím další péči.",
         },
       ],
     },
@@ -210,8 +216,10 @@ export const tvorbaWebu = {
   },
 
   cta: {
-    eyebrow: "Další krok",
-    heading: "Potřebujete nový web, ale ne hotové zadání?",
-    description: "Stačí popsat situaci a cíl. Rozsah společně upřesníme.",
+    eyebrow: "Chcete nový web?",
+    heading:
+      "Pojďme vytvořit web, který bude dobře reprezentovat vaše podnikání.",
+    description:
+      "Popište mi své podnikání a představu o webu. Společně upřesníme rozsah i další postup.",
   },
 } satisfies ServiceDetailData;

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans, Roboto_Serif } from "next/font/google";
 
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/seo";
+
 import { Provider } from "@/components/ui/provider";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
@@ -24,8 +26,31 @@ const robotoSerif = Roboto_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Roman Staněk",
-  description: "Weby a digitální řešení",
+  metadataBase: new URL(SITE_URL),
+
+  title: {
+    default: "Roman Staněk | Weby, aplikace a automatizace",
+    template: `%s | ${SITE_NAME}`,
+  },
+
+  description: SITE_DESCRIPTION,
+
+  applicationName: SITE_NAME,
+
+  openGraph: {
+    type: "website",
+    locale: "cs_CZ",
+    siteName: SITE_NAME,
+    title: "Roman Staněk | Weby, aplikace a automatizace",
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Roman Staněk | Weby, aplikace a automatizace",
+    description: SITE_DESCRIPTION,
+  },
 };
 
 export default function RootLayout({

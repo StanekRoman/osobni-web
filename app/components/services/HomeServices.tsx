@@ -53,9 +53,8 @@ export default function HomeServices() {
                 fontWeight="600"
                 color="textPrimary"
               >
-                Řešení podle situace
-                <br />
-                Ne univerzální balíček.
+                Od nového webu po aplikace
+                <br />a automatizace.
               </Heading>
             </Flex>
 
@@ -66,8 +65,8 @@ export default function HomeServices() {
               lineHeight="25px"
               color="textSubtle"
             >
-              Od prezentačního webu přes aplikaci až po automatizaci rutinní
-              práce.
+              Vytvořím vám web, který profesionálně představí vaše podnikání,
+              nebo nástroj, který usnadní každodenní práci.
             </Text>
           </Flex>
 

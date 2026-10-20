@@ -3,8 +3,8 @@ import Link from "next/link";
 import { LuArrowRight, LuCheck } from "react-icons/lu";
 
 const benefits = [
-  "Jasná struktura",
-  "Moderní vzhled",
+  "Přehledná struktura",
+  "Moderní design",
   "Rychlé načítání",
   "Snadná správa",
 ] as const;
@@ -32,7 +32,7 @@ export default function HeroContent() {
         borderRadius="999px"
       >
         <Text textStyle="label" color="accentDark">
-          Weby, které dávají smysl
+          Weby a webové aplikace na míru
         </Text>
       </Flex>
 
@@ -63,9 +63,9 @@ export default function HeroContent() {
             xl: "left",
           }}
         >
-          Aby lidé rychle pochopili,
+          Web, který představí vaše podnikání
           <Box as="span" display="block" color="accent">
-            proč si vybrat právě vás.
+            a pomůže získávat zákazníky.
           </Box>
         </Text>
       </Box>
@@ -88,8 +88,9 @@ export default function HeroContent() {
           xl: "left",
         }}
       >
-        Navrhuji a tvořím přehledné weby na míru. Od struktury a vizuálního
-        návrhu až po technickou realizaci a další správu.
+        Navrhuji a vyvíjím moderní weby a webové aplikace, které jsou přehledné,
+        rychlé a připravené růst s vaším podnikáním. Od prvního návrhu až po
+        spuštění a následnou péči.
       </Text>
 
       <Flex
@@ -116,7 +117,7 @@ export default function HeroContent() {
           gap="10px"
           width={{
             base: "100%",
-            md: "186px",
+            md: "250px",
           }}
           height={{
             base: "48px",
@@ -135,7 +136,7 @@ export default function HeroContent() {
         >
           <Link href="/nezavazne-poptat">
             <Box as="span" whiteSpace="nowrap">
-              Převést váš web
+              Nezávazně poptat
             </Box>
 
             <LuArrowRight size={17} strokeWidth={2} />
@@ -150,7 +151,7 @@ export default function HeroContent() {
           gap="10px"
           width={{
             base: "100%",
-            md: "174px",
+            md: "250px",
           }}
           height={{
             base: "48px",
@@ -171,7 +172,7 @@ export default function HeroContent() {
           }}
         >
           <Link href="/sluzby">
-            <Box as="span">Služby</Box>
+            <Box as="span">Prohlédnout služby</Box>
 
             <Box as="span" display="flex" color="accent">
               <LuArrowRight size={17} strokeWidth={2} />

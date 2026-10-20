@@ -31,8 +31,9 @@ export default function ContactHeroContent() {
         fontSize={{ base: "16px", xl: "18px" }}
         lineHeight={{ base: "26px", xl: "29px" }}
       >
-        Můžete mi napsat nebo zavolat. Pokud už máte konkrétní představu,
-        pošlete nezávaznou poptávku.
+        Máte nápad na nový web, potřebujete upravit ten současný nebo hledáte
+        způsob, jak si usnadnit práci? Napište mi nebo zavolejte. Rád s vámi
+        proberu možnosti spolupráce.
       </Text>
     </Flex>
   );

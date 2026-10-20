@@ -6,20 +6,21 @@ import { Section } from "@/components/ui/section";
 const principles = [
   {
     number: "01",
-    title: "Začínám problémem",
-    description: "Nejdřív cíl, kontext a lidé, pro které řešení vzniká.",
+    title: "Nejdřív pochopím vaše potřeby",
+    description:
+      "Probereme, co nabízíte, koho chcete oslovit a co má nový web nebo aplikace přinést.",
   },
   {
     number: "02",
-    title: "Návrh a vývoj držím pohromadě",
+    title: "Návrh i vývoj řeším osobně",
     description:
-      "To, co se navrhne, musí dávat smysl i technicky a v reálném provozu.",
+      "Od struktury a designu až po programování máte jednoho člověka, který zná celý projekt.",
   },
   {
     number: "03",
-    title: "Po spuštění nemusíme skončit",
+    title: "Spuštěním spolupráce nekončí",
     description:
-      "Web nebo nástroj lze dál upravovat, spravovat a rozvíjet podle skutečných potřeb.",
+      "Mohu se postarat také o údržbu, další úpravy a rozvoj webu podle toho, jak se vaše podnikání mění.",
   },
 ];
 
@@ -49,7 +50,7 @@ export default function AboutApproach() {
               }}
               color="textPrimary"
             >
-              Technická realizace je až druhá půlka práce.
+              Od prvního nápadu až po spuštění. Bez zbytečných komplikací.
             </Heading>
 
             <Text
@@ -59,8 +60,9 @@ export default function AboutApproach() {
               color="textSubtle"
               maxWidth="760px"
             >
-              Nejdřív potřebuji pochopit, co má výsledek změnit. Teprve potom
-              dává smysl řešit strukturu, vzhled a technologii.
+              Nejdřív chci pochopit vaše podnikání a to, co od webu nebo
+              aplikace očekáváte. Potom navrhnu vhodný postup, připravím řešení
+              a postarám se o jeho realizaci.
             </Text>
           </Flex>
 

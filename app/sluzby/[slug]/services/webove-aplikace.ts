@@ -7,34 +7,35 @@ import {
   LuTarget,
   LuWorkflow,
 } from "react-icons/lu";
+
 import type { ServiceDetailData } from "../types";
 
 export const weboveAplikace = {
   hero: {
     content: {
       eyebrow: "Webové aplikace",
-      heading: "Když nestačí stránka a potřebujete nástroj.",
+      heading: "Webové aplikace, které zjednoduší práci vašemu podnikání.",
       description:
-        "Webová aplikace dává smysl tam, kde má uživatel něco udělat, zpracovat nebo spravovat — ne jen číst obsah.",
+        "Navrhnu a vyvinu aplikaci na míru, která pomůže spravovat data, zákazníky nebo interní procesy. Od jednoduchého nástroje až po rozsáhlejší systém.",
       cta: {
         label: "Nezávazně poptat",
         href: "/nezavazne-poptat",
       },
     },
     visual: {
-      title: "Aplikační tok",
+      title: "Jak aplikace pracuje",
       steps: [
         {
           title: "Vstup",
-          description: "Uživatel zadá nebo vybere data.",
+          description: "Uživatel zadá nebo vybere potřebná data.",
         },
         {
-          title: "Logika",
-          description: "Aplikace provede konkrétní proces.",
+          title: "Zpracování",
+          description: "Aplikace provede požadované operace.",
         },
         {
-          title: "Výstup",
-          description: "Výsledek je srozumitelný a použitelný.",
+          title: "Výsledek",
+          description: "Uživatel získá přehled nebo dokončí úkol.",
         },
       ],
     },
@@ -43,9 +44,9 @@ export const weboveAplikace = {
   approach: {
     content: {
       eyebrow: "Jak o aplikaci přemýšlím",
-      heading: "Nejdřív tok. Potom obrazovky.",
+      heading: "Funkce podle toho, co uživatelé skutečně potřebují.",
       description:
-        "Aplikace musí mít jasný účel a jednoduchou cestu uživatele.",
+        "Nejdřív zjistím, kdo bude aplikaci používat, jaké úkoly potřebuje dokončit a s jakými daty pracuje. Podle toho navrhnu funkce a ovládání.",
     },
     visual: {
       steps: [
@@ -76,25 +77,27 @@ export const weboveAplikace = {
   benefits: {
     content: {
       eyebrow: "Co má řešení přinést",
-      heading: "Funkce mají sloužit procesu.",
+      heading: "Jednodušší práce, přehled nad daty a možnost dalšího rozvoje.",
       description:
-        "Nejde o počet obrazovek, ale o to, jak spolu jednotlivé části aplikace fungují.",
+        "Aplikace má usnadnit každodenní činnosti, zpřehlednit informace a přizpůsobit se tomu, jak vaše podnikání funguje.",
     },
     visual: {
       items: [
         {
-          title: "Srozumitelné UX",
-          description: "Každý krok má jasný účel.",
+          title: "Jednodušší ovládání",
+          description:
+            "Uživatelé se snadno zorientují a rychle dokončí potřebné úkoly.",
           icon: LuArrowUpRight,
         },
         {
-          title: "Vlastní logika",
-          description: "Funkce odpovídají konkrétnímu procesu.",
+          title: "Funkce na míru",
+          description: "Aplikace pracuje podle vašich pravidel a potřeb.",
           icon: LuDiamond,
         },
         {
           title: "Možnost rozvoje",
-          description: "Architektura může růst s potřebami projektu.",
+          description:
+            "Další funkce lze plánovat podle toho, jak se vaše potřeby mění.",
           icon: LuCheck,
         },
       ],
@@ -104,23 +107,26 @@ export const weboveAplikace = {
   pricing: {
     content: {
       eyebrow: "Cena a rozsah",
-      heading: "Rozsah aplikace určuje logika a počet klíčových funkcí.",
+      heading: "Kolik stojí vývoj webové aplikace?",
       description:
-        "Konkrétní cenu určuje rozsah, obsah, funkce a náročnost realizace. Nejdřív si ujasníme, co má řešení skutečně zvládnout.",
+        "Rozpočet určuje především počet funkcí, složitost jejich logiky, práce s daty a případná napojení na další služby. Před zahájením vývoje společně odsouhlasíme rozsah i cenu.",
     },
     visual: {
       factors: [
         {
-          title: "Rozsah",
-          description: "Kolik stránek, stavů nebo obrazovek řešíme.",
+          title: "Funkce aplikace",
+          description:
+            "Jaké úkoly má aplikace zvládat a kolik různých funkcí potřebuje.",
         },
         {
-          title: "Funkce",
-          description: "Co má řešení umět nad rámec prezentace.",
+          title: "Data a logika",
+          description:
+            "Jaká data zpracovává a jak složitá pravidla musí dodržovat.",
         },
         {
-          title: "Obsah",
-          description: "Co je připravené a co je potřeba vytvořit.",
+          title: "Integrace",
+          description:
+            "Zda se bude propojovat s dalšími systémy nebo externími službami.",
         },
       ],
     },
@@ -129,26 +135,28 @@ export const weboveAplikace = {
   process: {
     content: {
       eyebrow: "Jak probíhá spolupráce",
-      heading: "Přehledný proces od prvního kontextu po předání.",
-      description: "Každý krok má svůj důvod. Bez procesního chaosu.",
+      heading: "Od požadavků až po otestovanou aplikaci.",
+      description:
+        "Společně upřesníme funkce, připravím návrh ovládání, aplikaci vyvinu a před předáním ověřím její hlavní scénáře.",
     },
     visual: {
       steps: [
         {
-          title: "Proces",
-          description: "Rozepíšeme současný nebo nový pracovní tok.",
+          title: "Analýza požadavků",
+          description: "Probereme uživatele, potřebné funkce a práci s daty.",
         },
         {
-          title: "UX",
-          description: "Navrhnu obrazovky a jejich návaznosti.",
+          title: "Návrh aplikace",
+          description:
+            "Připravím strukturu obrazovek a způsob jejich ovládání.",
         },
         {
           title: "Vývoj",
-          description: "Implementace logiky a rozhraní.",
+          description: "Naprogramuji jednotlivé funkce a jejich propojení.",
         },
         {
-          title: "Testování",
-          description: "Ověření hlavních scénářů před předáním.",
+          title: "Testování a předání",
+          description: "Ověřím hlavní scénáře a předám aplikaci s dokumentací.",
         },
       ],
     },
@@ -204,10 +212,11 @@ export const weboveAplikace = {
       },
     ],
   },
+
   cta: {
     eyebrow: "Máte nápad na webovou aplikaci?",
-    heading: "Pojďme z něj udělat řešení, které vám usnadní práci",
+    heading: "Popište mi, co má aplikace umět. Navrhnu cestu k realizaci.",
     description:
-      "Nemusíte mít připravené technické zadání. Stačí mi popsat, co potřebujete vyřešit, a společně najdeme vhodný postup.",
+      "Nemusíte mít připravené technické zadání. Stačí popsat, co potřebujete zjednodušit, spravovat nebo vytvořit. Společně upřesníme funkce i další postup.",
   },
 } satisfies ServiceDetailData;

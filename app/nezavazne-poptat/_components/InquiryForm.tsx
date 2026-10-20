@@ -14,6 +14,7 @@ import {
   Textarea,
 } from "@chakra-ui/react";
 import { LuArrowRight, LuCheck, LuPaperclip } from "react-icons/lu";
+import Link from "next/link";
 
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
@@ -72,7 +73,8 @@ export function InquiryForm() {
               fontSize={{ base: "16px", xl: "18px" }}
               lineHeight={{ base: "26px", xl: "29px" }}
             >
-              Povinná jsou jen čtyři pole.
+              Vyplňte základní informace o projektu. Povinná jsou pouze čtyři
+              pole, ostatní můžete doplnit podle potřeby.
             </Text>
           </Flex>
 
@@ -333,6 +335,21 @@ export function InquiryForm() {
                     <LuArrowRight />
                   </Button>
                 </Flex>
+
+                <Text fontSize="13px" lineHeight="1.7" color="textSubtle">
+                  Odesláním formuláře berete na vědomí zpracování osobních údajů
+                  za účelem vyřízení vaší poptávky. Podrobnosti najdete v{" "}
+                  <Link
+                    href="/ochrana-osobnich-udaju"
+                    style={{
+                      textDecoration: "underline",
+                      textUnderlineOffset: "3px",
+                    }}
+                  >
+                    zásadách ochrany osobních údajů
+                  </Link>
+                  .
+                </Text>
               </Flex>
             )}
           </chakra.form>

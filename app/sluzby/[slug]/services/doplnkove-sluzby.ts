@@ -14,28 +14,28 @@ export const doplnkoveSluzby = {
   hero: {
     content: {
       eyebrow: "Doplňkové služby",
-      heading: "Když hlavní projekt potřebuje něco navíc.",
+      heading: "Menší úpravy a nové funkce pro váš web nebo aplikaci.",
       description:
-        "Některé úkoly nedávají smysl jako samostatný velký projekt, ale přirozeně navazují na web, aplikaci nebo další digitální řešení.",
+        "Potřebujete doplnit formulář, propojit službu, upravit design nebo rozšířit stávající web o novou funkci? Pomohu vám s konkrétními změnami bez nutnosti stavět celý projekt znovu.",
       cta: {
         label: "Nezávazně poptat",
         href: "/nezavazne-poptat",
       },
     },
     visual: {
-      title: "Flexibilní rozsah",
+      title: "Od požadavku k hotové úpravě",
       steps: [
         {
-          title: "Kontext",
-          description: "Co už existuje a na co navazujeme.",
+          title: "Současný stav",
+          description: "Zjistím, jak web nebo aplikace funguje.",
         },
         {
-          title: "Rozsah",
-          description: "Řešíme jen konkrétní potřebnou část.",
+          title: "Konkrétní změna",
+          description: "Společně vymezíme, co je potřeba upravit.",
         },
         {
-          title: "Návaznost",
-          description: "Výsledek zapadne do hlavního řešení.",
+          title: "Hotový výsledek",
+          description: "Nová funkce nebo úprava zapadne do stávajícího řešení.",
         },
       ],
     },
@@ -43,31 +43,31 @@ export const doplnkoveSluzby = {
 
   approach: {
     content: {
-      eyebrow: "Jak o doplňku přemýšlím",
-      heading: "Nejdřív návaznost. Potom samostatná práce.",
+      eyebrow: "Jak o doplňkových službách přemýšlím",
+      heading: "Konkrétní úprava s jasným rozsahem a výsledkem.",
       description:
-        "Doplňková služba má podporovat hlavní výsledek, ne vytvářet vedlejší projekt bez jasného účelu.",
+        "Ne každá změna vyžaduje nový web nebo rozsáhlý projekt. Nejprve posoudím současné řešení a navrhnu, jak požadovanou úpravu provést bez zbytečných zásahů.",
     },
     visual: {
       steps: [
         {
-          title: "Kontext",
-          description: "Na co práce navazuje?",
+          title: "Současné řešení",
+          description: "Na jaký web nebo aplikaci budeme navazovat?",
           icon: LuLayers,
         },
         {
-          title: "Hranice",
-          description: "Co přesně je součástí?",
+          title: "Rozsah úpravy",
+          description: "Co přesně potřebujete změnit nebo doplnit?",
           icon: LuListChecks,
         },
         {
-          title: "Výstup",
-          description: "Jaký konkrétní výsledek vznikne?",
+          title: "Výsledek",
+          description: "Jak má hotová úprava fungovat?",
           icon: LuPackageCheck,
         },
         {
-          title: "Návaznost",
-          description: "Jak zapadne do hlavního řešení?",
+          title: "Návaznosti",
+          description: "Kterých dalších částí systému se změna dotkne?",
           icon: LuPuzzle,
         },
       ],
@@ -77,25 +77,27 @@ export const doplnkoveSluzby = {
   benefits: {
     content: {
       eyebrow: "Co má řešení přinést",
-      heading: "Doplněk, který má jasnou roli.",
+      heading: "Nové funkce, lepší použitelnost a rozvoj stávajícího řešení.",
       description:
-        "Menší práce držíme malou a konkrétní. Pokud přeroste původní rozsah, oddělíme ji.",
+        "Pomohu vám doplnit to, co na webu nebo v aplikaci chybí, upravit nevyhovující části a rozšířit možnosti současného řešení.",
     },
     visual: {
       items: [
         {
-          title: "Návaznost",
-          description: "Výsledek podporuje hlavní projekt.",
+          title: "Nové možnosti",
+          description:
+            "Doplnění funkcí, formulářů nebo propojení s dalšími službami.",
           icon: LuDiamond,
         },
         {
-          title: "Jasná hranice",
-          description: "Je zřejmé, co je součástí malého rozsahu.",
+          title: "Cílené úpravy",
+          description:
+            "Změny konkrétních částí bez zbytečného předělávání celého projektu.",
           icon: LuArrowUpRight,
         },
         {
-          title: "Možnost rozšíření",
-          description: "Větší potřeba se může změnit v samostatný projekt.",
+          title: "Další rozvoj",
+          description: "Stávající web nebo aplikaci lze postupně rozšiřovat.",
           icon: LuCheck,
         },
       ],
@@ -105,10 +107,9 @@ export const doplnkoveSluzby = {
   pricing: {
     content: {
       eyebrow: "Cena a rozsah",
-      heading:
-        "Cena vychází z konkrétního rozsahu doplňkové práce a její návaznosti na hlavní projekt.",
+      heading: "Kolik stojí menší úpravy webu nebo aplikace?",
       description:
-        "Nejdřív posoudím současné řešení a upřesníme požadovanou změnu. Podle její náročnosti a potřebných návazností pak připravím konkrétní cenovou nabídku.",
+        "Cena vychází z náročnosti úpravy a technického stavu současného řešení. U samostatných zakázek platí minimální hodnota 5 000 Kč. Konkrétní rozsah a cenu si odsouhlasíme před realizací.",
     },
     visual: {
       factors: [
@@ -131,27 +132,27 @@ export const doplnkoveSluzby = {
   process: {
     content: {
       eyebrow: "Jak probíhá spolupráce",
-      heading: "Přehledný proces od prvního kontextu po výsledek.",
+      heading: "Od konkrétního zadání po hotovou úpravu.",
       description:
-        "Každý krok má svůj důvod. Bez procesního divadla a bez zbytečných mezikroků.",
+        "Popíšete požadovanou změnu, posoudím současné řešení a navrhnu postup. Po odsouhlasení úpravu provedu, otestuji a předám.",
     },
     visual: {
       steps: [
         {
-          title: "Kontext",
-          description: "Upřesníme, na co má práce navazovat.",
+          title: "Zadání",
+          description: "Popíšete, co potřebujete upravit nebo doplnit.",
         },
         {
-          title: "Rozsah",
-          description: "Vymezíme konkrétní malý výstup.",
+          title: "Posouzení",
+          description: "Prověřím technické možnosti a upřesníme rozsah i cenu.",
         },
         {
-          title: "Realizace",
-          description: "Doplněk připravím a ověřím.",
+          title: "Realizace a testování",
+          description: "Úpravu provedu a ověřím její správné fungování.",
         },
         {
           title: "Předání",
-          description: "Výsledek zapadne do hlavního řešení.",
+          description: "Hotovou změnu nasadím a předám potřebné informace.",
         },
       ],
     },
@@ -202,9 +203,9 @@ export const doplnkoveSluzby = {
   },
 
   cta: {
-    eyebrow: "Další krok",
-    heading: "Máte menší úkol, který se nevejde do jedné hlavní služby?",
+    eyebrow: "Potřebujete něco upravit?",
+    heading: "Máte konkrétní úpravu, kterou potřebujete vyřešit? Napište mi.",
     description:
-      "Popište ho. Pokud dává smysl jako doplněk, rozsah udržíme malý a konkrétní.",
+      "Popište mi požadovanou změnu a pošlete adresu webu nebo informace o aplikaci. Posoudím možnosti realizace.",
   },
 } satisfies ServiceDetailData;

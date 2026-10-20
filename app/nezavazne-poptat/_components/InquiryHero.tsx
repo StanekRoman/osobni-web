@@ -50,8 +50,9 @@ export function InquiryHero() {
               fontSize={{ base: "16px", xl: "18px" }}
               lineHeight={{ base: "26px", xl: "29px" }}
             >
-              Stačí základní kontext. Formulář má zjistit, co řešíte — ne vás
-              nutit psát specifikaci.
+              Stačí mi stručně popsat, co plánujete nebo potřebujete vyřešit.
+              Nemusíte znát technické detaily ani mít připravené podrobné
+              zadání. Společně probereme, jak váš projekt uchopit.
             </Text>
           </Flex>
 
@@ -85,12 +86,13 @@ export function InquiryHero() {
               lineHeight="1.6"
               mb="24px"
             >
-              Rezervace hovoru je stejně důležitá cesta jako formulář.
+              Pokud svůj nápad raději proberete osobně, zavolejte mi nebo mi
+              napište. Domluvíme se na vhodném termínu.
             </Text>
 
             <Link asChild fontWeight="600" color="textPrimary">
               <NextLink href="/kontakt">
-                Domluvit hovor
+                Kontaktní údaje
                 <LuArrowRight size={18} />
               </NextLink>
             </Link>
