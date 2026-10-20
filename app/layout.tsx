@@ -51,6 +51,11 @@ export const metadata: Metadata = {
     title: "Roman Staněk | Weby, aplikace a automatizace",
     description: SITE_DESCRIPTION,
   },
+  verification: {
+    other: {
+      "seznam-wmt": "75WZWYBUy9Ru6Kj3qWpHTy13HrmTRP75",
+    },
+  },
 };
 
 export default function RootLayout({
