@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Roman Staněk – osobní web
 
-## Getting Started
+Moderní osobní a profesní web zaměřený na prezentaci služeb v oblasti webového vývoje, tvorby webových aplikací a automatizace.
 
-First, run the development server:
+Projekt vznikl jako kompletní náhrada původního webu postaveného na WordPressu. Cílem bylo získat větší kontrolu nad architekturou, výkonem, uživatelským rozhraním a procesem vývoje i nasazování.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Live:** https://stanek-roman.cz  
+**Staging:** https://staging.stanek-roman.cz
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Oblast | Technologie |
+|---|---|
+| Framework | Next.js 16 (App Router) |
+| UI | React 19, Chakra UI v3 |
+| Jazyk | TypeScript |
+| Validace | Zod |
+| E-mailová integrace | Resend |
+| Hosting | Vercel |
+| Verzování | Git, GitHub |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Architektura a implementace
 
-## Learn More
+### Komponentový systém
 
-To learn more about Next.js, take a look at the following resources:
+Web využívá opakovaně použitelné React komponenty a jednotný design systém založený na Chakra UI.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Obsah je oddělený od prezentační vrstvy a spravovaný prostřednictvím strukturovaných TypeScript datových souborů.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Dynamické stránky služeb
 
-## Deploy on Vercel
+Jednotlivé stránky služeb sdílejí společnou strukturu a komponenty. Jejich obsah se generuje z dat definovaných pro konkrétní službu.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Tento přístup omezuje duplicitu a usnadňuje údržbu i rozšiřování webu.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Poptávkový formulář
+
+Formulář je implementovaný s vlastní serverovou API route.
+
+- Validace vstupních dat pomocí Zod.
+- Zpracování příloh.
+- Odesílání poptávek přes Resend.
+- Zpracování chyb a validačních stavů.
+
+### SEO a migrace
+
+Součástí projektu byla migrace z WordPressu na Next.js se zachováním dostupnosti původních URL prostřednictvím přesměrování.
+
+Implementace zahrnuje metadata, canonical URL, sitemap.xml a robots.txt.
+
+## Vývojový workflow
+
+Vývoj probíhá prostřednictvím oddělených Git větví:
+
+`feature/*` → `staging` → `main`
+
+Změny se integrují přes Pull Requesty s využitím Squash and merge.
+
+Nasazování probíhá na Vercelu s odděleným staging a produkčním prostředím.
+
+## Technická rozhodnutí
+
+**Next.js místo WordPressu**  
+Větší kontrola nad implementací, architekturou a deployment workflow.
+
+**Chakra UI místo Tailwind CSS**  
+Komponentový přístup, centrální design systém a konzistentní práce se styly.
+
+**Obsah v TypeScriptu místo CMS**  
+Jednodušší architektura odpovídající rozsahu projektu, bez nutnosti provozovat administrační rozhraní.
+
+**Sdílené komponenty pro stránky služeb**  
+Menší duplicita, jednodušší údržba a konzistentní uživatelské rozhraní.
+
+## Stav projektu
+
+MVP bylo nasazeno do produkce 20. října 2026.
+
+Projekt je nadále aktivně udržován a rozvíjen.
+
+## Autor
+
+**Roman Staněk**  
+Webový vývojář
+
+Web: https://stanek-roman.cz  
+GitHub: https://github.com/StanekRoman
